@@ -15,6 +15,12 @@
 		EE767F16291A907100AFE6C0 /* MakeItGreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F15291A907100AFE6C0 /* MakeItGreatTests.swift */; };
 		EE767F20291A907100AFE6C0 /* MakeItGreatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F1F291A907100AFE6C0 /* MakeItGreatUITests.swift */; };
 		EE767F22291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F21291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */; };
+		EE767F3E292CE66E00AFE6C0 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F3D292CE66E00AFE6C0 /* AudioViewController.swift */; };
+		EE767F40292CE6DE00AFE6C0 /* AudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F3F292CE6DE00AFE6C0 /* AudioView.swift */; };
+		EE767F42292CE75300AFE6C0 /* AudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F41292CE75300AFE6C0 /* AudioViewModel.swift */; };
+		EE767F44292CEC4B00AFE6C0 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F43292CEC4B00AFE6C0 /* AudioModel.swift */; };
+		EE767F45292D024400AFE6C0 /* BEEHIVE.WAV in Resources */ = {isa = PBXBuildFile; fileRef = EE767F38292CE63900AFE6C0 /* BEEHIVE.WAV */; };
+		EE767F46292D027900AFE6C0 /* CHIRPS_2.WAV in Resources */ = {isa = PBXBuildFile; fileRef = EE767F3A292CE64700AFE6C0 /* CHIRPS_2.WAV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		EE767F1B291A907100AFE6C0 /* MakeItGreatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767F1F291A907100AFE6C0 /* MakeItGreatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITests.swift; sourceTree = "<group>"; };
 		EE767F21291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE767F38292CE63900AFE6C0 /* BEEHIVE.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BEEHIVE.WAV; sourceTree = "<group>"; };
+		EE767F3A292CE64700AFE6C0 /* CHIRPS_2.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CHIRPS_2.WAV; sourceTree = "<group>"; };
+		EE767F3D292CE66E00AFE6C0 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		EE767F3F292CE6DE00AFE6C0 /* AudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
+		EE767F41292CE75300AFE6C0 /* AudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewModel.swift; sourceTree = "<group>"; };
+		EE767F43292CEC4B00AFE6C0 /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,12 @@
 				EE767F00291A907000AFE6C0 /* SceneDelegate.swift */,
 				EE767F0C291A907100AFE6C0 /* Info.plist */,
 				EE767F07291A907100AFE6C0 /* Assets.xcassets */,
+				EE767F04291A907000AFE6C0 /* Main.storyboard */,
 				EE767F32291A92DF00AFE6C0 /* ViewControllers */,
 				EE767F31291A92D600AFE6C0 /* ViewModels */,
 				EE767F30291A92D100AFE6C0 /* Views */,
 				EE767F2F291A92C600AFE6C0 /* Models */,
+				EE767F37292CE5AD00AFE6C0 /* Audios */,
 			);
 			path = MakeItGreat;
 			sourceTree = "<group>";
@@ -129,6 +143,7 @@
 		EE767F2F291A92C600AFE6C0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE767F43292CEC4B00AFE6C0 /* AudioModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,7 +151,7 @@
 		EE767F30291A92D100AFE6C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EE767F04291A907000AFE6C0 /* Main.storyboard */,
+				EE767F3F292CE6DE00AFE6C0 /* AudioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +159,7 @@
 		EE767F31291A92D600AFE6C0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EE767F41292CE75300AFE6C0 /* AudioViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -152,8 +168,18 @@
 			isa = PBXGroup;
 			children = (
 				EE767F02291A907000AFE6C0 /* ViewController.swift */,
+				EE767F3D292CE66E00AFE6C0 /* AudioViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE767F37292CE5AD00AFE6C0 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				EE767F38292CE63900AFE6C0 /* BEEHIVE.WAV */,
+				EE767F3A292CE64700AFE6C0 /* CHIRPS_2.WAV */,
+			);
+			path = Audios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +246,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					1,
+					2,
+				);
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
@@ -261,6 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE767F46292D027900AFE6C0 /* CHIRPS_2.WAV in Resources */,
+				EE767F45292D024400AFE6C0 /* BEEHIVE.WAV in Resources */,
 				EE767F08291A907100AFE6C0 /* Assets.xcassets in Resources */,
 				EE767F06291A907000AFE6C0 /* Main.storyboard in Resources */,
 			);
@@ -308,8 +340,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE767F44292CEC4B00AFE6C0 /* AudioModel.swift in Sources */,
 				EE767F03291A907000AFE6C0 /* ViewController.swift in Sources */,
+				EE767F42292CE75300AFE6C0 /* AudioViewModel.swift in Sources */,
+				EE767F40292CE6DE00AFE6C0 /* AudioView.swift in Sources */,
 				EE767EFF291A907000AFE6C0 /* AppDelegate.swift in Sources */,
+				EE767F3E292CE66E00AFE6C0 /* AudioViewController.swift in Sources */,
 				EE767F01291A907000AFE6C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
