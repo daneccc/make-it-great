@@ -1,4 +1,5 @@
 import UIKit
+import AVFAudio
 
 class AudioViewController: UIViewController {
 
@@ -26,7 +27,19 @@ class AudioViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setAudio()
+        audioViewModel.playSound()
         view.backgroundColor = .systemGreen
+    }
+
+    private func setAudio() {
+        audioView.audioSet = { [weak self] in
+            self?.playAudio()
+        }
+    }
+
+    private func playAudio() {
+        audioViewModel.playSound()
     }
 
 }
@@ -38,9 +51,5 @@ extension AudioViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         audioViewModel.makeCell(tableView, indexPath)
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        audioViewModel.deSelect(tableView, indexPath)
     }
 }

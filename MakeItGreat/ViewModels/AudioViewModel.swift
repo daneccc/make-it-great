@@ -29,12 +29,8 @@ class AudioViewModel {
         return cell
     }
 
-    func deSelect(
-        _ tableView: UITableView,
-        _ indexPath: IndexPath
-    ) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let audio = audios[indexPath.row]
+    func playSound() {
+        let audio = audios[1]
         if let player = player, player.isPlaying {
             player.stop()
 
