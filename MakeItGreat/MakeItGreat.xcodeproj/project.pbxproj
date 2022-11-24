@@ -7,64 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE767EFF291A907000AFE6C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767EFE291A907000AFE6C0 /* AppDelegate.swift */; };
-		EE767F01291A907000AFE6C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F00291A907000AFE6C0 /* SceneDelegate.swift */; };
-		EE767F03291A907000AFE6C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F02291A907000AFE6C0 /* ViewController.swift */; };
-		EE767F06291A907000AFE6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE767F04291A907000AFE6C0 /* Main.storyboard */; };
-		EE767F08291A907100AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F07291A907100AFE6C0 /* Assets.xcassets */; };
-		EE767F16291A907100AFE6C0 /* MakeItGreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F15291A907100AFE6C0 /* MakeItGreatTests.swift */; };
-		EE767F20291A907100AFE6C0 /* MakeItGreatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F1F291A907100AFE6C0 /* MakeItGreatUITests.swift */; };
-		EE767F22291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F21291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */; };
+		EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */; };
+		EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F96292FAA9D00AFE6C0 /* ContentView.swift */; };
+		EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */; };
+		EE767F9C292FAA9F00AFE6C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F9B292FAA9F00AFE6C0 /* Preview Assets.xcassets */; };
+		EE767FA6292FAA9F00AFE6C0 /* MakeItGreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FA5292FAA9F00AFE6C0 /* MakeItGreatTests.swift */; };
+		EE767FB0292FAA9F00AFE6C0 /* MakeItGreatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FAF292FAA9F00AFE6C0 /* MakeItGreatUITests.swift */; };
+		EE767FB2292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FB1292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EE767F12291A907100AFE6C0 /* PBXContainerItemProxy */ = {
+		EE767FA2292FAA9F00AFE6C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE767EF3291A907000AFE6C0 /* Project object */;
+			containerPortal = EE767F89292FAA9D00AFE6C0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EE767EFA291A907000AFE6C0;
+			remoteGlobalIDString = EE767F90292FAA9D00AFE6C0;
 			remoteInfo = MakeItGreat;
 		};
-		EE767F1C291A907100AFE6C0 /* PBXContainerItemProxy */ = {
+		EE767FAC292FAA9F00AFE6C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EE767EF3291A907000AFE6C0 /* Project object */;
+			containerPortal = EE767F89292FAA9D00AFE6C0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EE767EFA291A907000AFE6C0;
+			remoteGlobalIDString = EE767F90292FAA9D00AFE6C0;
 			remoteInfo = MakeItGreat;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE767EFB291A907000AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE767EFE291A907000AFE6C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE767F00291A907000AFE6C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE767F02291A907000AFE6C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE767F05291A907000AFE6C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE767F07291A907100AFE6C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE767F0C291A907100AFE6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE767F11291A907100AFE6C0 /* MakeItGreatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE767F15291A907100AFE6C0 /* MakeItGreatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatTests.swift; sourceTree = "<group>"; };
-		EE767F1B291A907100AFE6C0 /* MakeItGreatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE767F1F291A907100AFE6C0 /* MakeItGreatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITests.swift; sourceTree = "<group>"; };
-		EE767F21291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatApp.swift; sourceTree = "<group>"; };
+		EE767F96292FAA9D00AFE6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE767F9B292FAA9F00AFE6C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE767FA1292FAA9F00AFE6C0 /* MakeItGreatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE767FA5292FAA9F00AFE6C0 /* MakeItGreatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatTests.swift; sourceTree = "<group>"; };
+		EE767FAB292FAA9F00AFE6C0 /* MakeItGreatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE767FAF292FAA9F00AFE6C0 /* MakeItGreatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITests.swift; sourceTree = "<group>"; };
+		EE767FB1292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EE767EF8291A907000AFE6C0 /* Frameworks */ = {
+		EE767F8E292FAA9D00AFE6C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE767F0E291A907100AFE6C0 /* Frameworks */ = {
+		EE767F9E292FAA9F00AFE6C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE767F18291A907100AFE6C0 /* Frameworks */ = {
+		EE767FA8292FAA9F00AFE6C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,99 +71,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EE767EF2291A907000AFE6C0 = {
+		EE767F88292FAA9D00AFE6C0 = {
 			isa = PBXGroup;
 			children = (
-				EE767EFD291A907000AFE6C0 /* MakeItGreat */,
-				EE767F14291A907100AFE6C0 /* MakeItGreatTests */,
-				EE767F1E291A907100AFE6C0 /* MakeItGreatUITests */,
-				EE767EFC291A907000AFE6C0 /* Products */,
+				EE767F93292FAA9D00AFE6C0 /* MakeItGreat */,
+				EE767FA4292FAA9F00AFE6C0 /* MakeItGreatTests */,
+				EE767FAE292FAA9F00AFE6C0 /* MakeItGreatUITests */,
+				EE767F92292FAA9D00AFE6C0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EE767EFC291A907000AFE6C0 /* Products */ = {
+		EE767F92292FAA9D00AFE6C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE767EFB291A907000AFE6C0 /* MakeItGreat.app */,
-				EE767F11291A907100AFE6C0 /* MakeItGreatTests.xctest */,
-				EE767F1B291A907100AFE6C0 /* MakeItGreatUITests.xctest */,
+				EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */,
+				EE767FA1292FAA9F00AFE6C0 /* MakeItGreatTests.xctest */,
+				EE767FAB292FAA9F00AFE6C0 /* MakeItGreatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE767EFD291A907000AFE6C0 /* MakeItGreat */ = {
+		EE767F93292FAA9D00AFE6C0 /* MakeItGreat */ = {
 			isa = PBXGroup;
 			children = (
-				EE767EFE291A907000AFE6C0 /* AppDelegate.swift */,
-				EE767F00291A907000AFE6C0 /* SceneDelegate.swift */,
-				EE767F0C291A907100AFE6C0 /* Info.plist */,
-				EE767F07291A907100AFE6C0 /* Assets.xcassets */,
-				EE767F32291A92DF00AFE6C0 /* ViewControllers */,
-				EE767F31291A92D600AFE6C0 /* ViewModels */,
-				EE767F30291A92D100AFE6C0 /* Views */,
-				EE767F2F291A92C600AFE6C0 /* Models */,
+				EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */,
+				EE767FC2292FAB2500AFE6C0 /* Controller */,
+				EE767FC1292FAB1700AFE6C0 /* View */,
+				EE767FC0292FAB0700AFE6C0 /* Model */,
+				EE767FBF292FAAFE00AFE6C0 /* ViewModel */,
+				EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */,
+				EE767F9A292FAA9F00AFE6C0 /* Preview Content */,
 			);
 			path = MakeItGreat;
 			sourceTree = "<group>";
 		};
-		EE767F14291A907100AFE6C0 /* MakeItGreatTests */ = {
+		EE767F9A292FAA9F00AFE6C0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				EE767F15291A907100AFE6C0 /* MakeItGreatTests.swift */,
+				EE767F9B292FAA9F00AFE6C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE767FA4292FAA9F00AFE6C0 /* MakeItGreatTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE767FA5292FAA9F00AFE6C0 /* MakeItGreatTests.swift */,
 			);
 			path = MakeItGreatTests;
 			sourceTree = "<group>";
 		};
-		EE767F1E291A907100AFE6C0 /* MakeItGreatUITests */ = {
+		EE767FAE292FAA9F00AFE6C0 /* MakeItGreatUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EE767F1F291A907100AFE6C0 /* MakeItGreatUITests.swift */,
-				EE767F21291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */,
+				EE767FAF292FAA9F00AFE6C0 /* MakeItGreatUITests.swift */,
+				EE767FB1292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */,
 			);
 			path = MakeItGreatUITests;
 			sourceTree = "<group>";
 		};
-		EE767F2F291A92C600AFE6C0 /* Models */ = {
+		EE767FBF292FAAFE00AFE6C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EE767F30291A92D100AFE6C0 /* Views */ = {
+		EE767FC0292FAB0700AFE6C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE767F04291A907000AFE6C0 /* Main.storyboard */,
 			);
-			path = Views;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		EE767F31291A92D600AFE6C0 /* ViewModels */ = {
+		EE767FC1292FAB1700AFE6C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE767F96292FAA9D00AFE6C0 /* ContentView.swift */,
 			);
-			path = ViewModels;
+			path = View;
 			sourceTree = "<group>";
 		};
-		EE767F32291A92DF00AFE6C0 /* ViewControllers */ = {
+		EE767FC2292FAB2500AFE6C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EE767F02291A907000AFE6C0 /* ViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE767EFA291A907000AFE6C0 /* MakeItGreat */ = {
+		EE767F90292FAA9D00AFE6C0 /* MakeItGreat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE767F25291A907100AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreat" */;
+			buildConfigurationList = EE767FB5292FAA9F00AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreat" */;
 			buildPhases = (
-				EE767EF7291A907000AFE6C0 /* Sources */,
-				EE767EF8291A907000AFE6C0 /* Frameworks */,
-				EE767EF9291A907000AFE6C0 /* Resources */,
-				EE767F2E291A914B00AFE6C0 /* ShellScript */,
+				EE767F8D292FAA9D00AFE6C0 /* Sources */,
+				EE767F8E292FAA9D00AFE6C0 /* Frameworks */,
+				EE767F8F292FAA9D00AFE6C0 /* Resources */,
+				EE767FBE292FAAF400AFE6C0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -174,69 +177,69 @@
 			);
 			name = MakeItGreat;
 			productName = MakeItGreat;
-			productReference = EE767EFB291A907000AFE6C0 /* MakeItGreat.app */;
+			productReference = EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EE767F10291A907100AFE6C0 /* MakeItGreatTests */ = {
+		EE767FA0292FAA9F00AFE6C0 /* MakeItGreatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE767F28291A907100AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatTests" */;
+			buildConfigurationList = EE767FB8292FAA9F00AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatTests" */;
 			buildPhases = (
-				EE767F0D291A907100AFE6C0 /* Sources */,
-				EE767F0E291A907100AFE6C0 /* Frameworks */,
-				EE767F0F291A907100AFE6C0 /* Resources */,
+				EE767F9D292FAA9F00AFE6C0 /* Sources */,
+				EE767F9E292FAA9F00AFE6C0 /* Frameworks */,
+				EE767F9F292FAA9F00AFE6C0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE767F13291A907100AFE6C0 /* PBXTargetDependency */,
+				EE767FA3292FAA9F00AFE6C0 /* PBXTargetDependency */,
 			);
 			name = MakeItGreatTests;
 			productName = MakeItGreatTests;
-			productReference = EE767F11291A907100AFE6C0 /* MakeItGreatTests.xctest */;
+			productReference = EE767FA1292FAA9F00AFE6C0 /* MakeItGreatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EE767F1A291A907100AFE6C0 /* MakeItGreatUITests */ = {
+		EE767FAA292FAA9F00AFE6C0 /* MakeItGreatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE767F2B291A907100AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatUITests" */;
+			buildConfigurationList = EE767FBB292FAA9F00AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatUITests" */;
 			buildPhases = (
-				EE767F17291A907100AFE6C0 /* Sources */,
-				EE767F18291A907100AFE6C0 /* Frameworks */,
-				EE767F19291A907100AFE6C0 /* Resources */,
+				EE767FA7292FAA9F00AFE6C0 /* Sources */,
+				EE767FA8292FAA9F00AFE6C0 /* Frameworks */,
+				EE767FA9292FAA9F00AFE6C0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE767F1D291A907100AFE6C0 /* PBXTargetDependency */,
+				EE767FAD292FAA9F00AFE6C0 /* PBXTargetDependency */,
 			);
 			name = MakeItGreatUITests;
 			productName = MakeItGreatUITests;
-			productReference = EE767F1B291A907100AFE6C0 /* MakeItGreatUITests.xctest */;
+			productReference = EE767FAB292FAA9F00AFE6C0 /* MakeItGreatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EE767EF3291A907000AFE6C0 /* Project object */ = {
+		EE767F89292FAA9D00AFE6C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					EE767EFA291A907000AFE6C0 = {
+					EE767F90292FAA9D00AFE6C0 = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					EE767F10291A907100AFE6C0 = {
+					EE767FA0292FAA9F00AFE6C0 = {
 						CreatedOnToolsVersion = 14.0;
-						TestTargetID = EE767EFA291A907000AFE6C0;
+						TestTargetID = EE767F90292FAA9D00AFE6C0;
 					};
-					EE767F1A291A907100AFE6C0 = {
+					EE767FAA292FAA9F00AFE6C0 = {
 						CreatedOnToolsVersion = 14.0;
-						TestTargetID = EE767EFA291A907000AFE6C0;
+						TestTargetID = EE767F90292FAA9D00AFE6C0;
 					};
 				};
 			};
-			buildConfigurationList = EE767EF6291A907000AFE6C0 /* Build configuration list for PBXProject "MakeItGreat" */;
+			buildConfigurationList = EE767F8C292FAA9D00AFE6C0 /* Build configuration list for PBXProject "MakeItGreat" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -244,36 +247,36 @@
 				en,
 				Base,
 			);
-			mainGroup = EE767EF2291A907000AFE6C0;
-			productRefGroup = EE767EFC291A907000AFE6C0 /* Products */;
+			mainGroup = EE767F88292FAA9D00AFE6C0;
+			productRefGroup = EE767F92292FAA9D00AFE6C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE767EFA291A907000AFE6C0 /* MakeItGreat */,
-				EE767F10291A907100AFE6C0 /* MakeItGreatTests */,
-				EE767F1A291A907100AFE6C0 /* MakeItGreatUITests */,
+				EE767F90292FAA9D00AFE6C0 /* MakeItGreat */,
+				EE767FA0292FAA9F00AFE6C0 /* MakeItGreatTests */,
+				EE767FAA292FAA9F00AFE6C0 /* MakeItGreatUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EE767EF9291A907000AFE6C0 /* Resources */ = {
+		EE767F8F292FAA9D00AFE6C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE767F08291A907100AFE6C0 /* Assets.xcassets in Resources */,
-				EE767F06291A907000AFE6C0 /* Main.storyboard in Resources */,
+				EE767F9C292FAA9F00AFE6C0 /* Preview Assets.xcassets in Resources */,
+				EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE767F0F291A907100AFE6C0 /* Resources */ = {
+		EE767F9F292FAA9F00AFE6C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE767F19291A907100AFE6C0 /* Resources */ = {
+		EE767FA9292FAA9F00AFE6C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,7 +286,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EE767F2E291A914B00AFE6C0 /* ShellScript */ = {
+		EE767FBE292FAAF400AFE6C0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -299,66 +302,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EE767EF7291A907000AFE6C0 /* Sources */ = {
+		EE767F8D292FAA9D00AFE6C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE767F03291A907000AFE6C0 /* ViewController.swift in Sources */,
-				EE767EFF291A907000AFE6C0 /* AppDelegate.swift in Sources */,
-				EE767F01291A907000AFE6C0 /* SceneDelegate.swift in Sources */,
+				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
+				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE767F0D291A907100AFE6C0 /* Sources */ = {
+		EE767F9D292FAA9F00AFE6C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE767F16291A907100AFE6C0 /* MakeItGreatTests.swift in Sources */,
+				EE767FA6292FAA9F00AFE6C0 /* MakeItGreatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE767F17291A907100AFE6C0 /* Sources */ = {
+		EE767FA7292FAA9F00AFE6C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE767F20291A907100AFE6C0 /* MakeItGreatUITests.swift in Sources */,
-				EE767F22291A907100AFE6C0 /* MakeItGreatUITestsLaunchTests.swift in Sources */,
+				EE767FB0292FAA9F00AFE6C0 /* MakeItGreatUITests.swift in Sources */,
+				EE767FB2292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EE767F13291A907100AFE6C0 /* PBXTargetDependency */ = {
+		EE767FA3292FAA9F00AFE6C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EE767EFA291A907000AFE6C0 /* MakeItGreat */;
-			targetProxy = EE767F12291A907100AFE6C0 /* PBXContainerItemProxy */;
+			target = EE767F90292FAA9D00AFE6C0 /* MakeItGreat */;
+			targetProxy = EE767FA2292FAA9F00AFE6C0 /* PBXContainerItemProxy */;
 		};
-		EE767F1D291A907100AFE6C0 /* PBXTargetDependency */ = {
+		EE767FAD292FAA9F00AFE6C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EE767EFA291A907000AFE6C0 /* MakeItGreat */;
-			targetProxy = EE767F1C291A907100AFE6C0 /* PBXContainerItemProxy */;
+			target = EE767F90292FAA9D00AFE6C0 /* MakeItGreat */;
+			targetProxy = EE767FAC292FAA9F00AFE6C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		EE767F04291A907000AFE6C0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE767F05291A907000AFE6C0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		EE767F23291A907100AFE6C0 /* Debug */ = {
+		EE767FB3292FAA9F00AFE6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -418,7 +409,7 @@
 			};
 			name = Debug;
 		};
-		EE767F24291A907100AFE6C0 /* Release */ = {
+		EE767FB4292FAA9F00AFE6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -472,18 +463,20 @@
 			};
 			name = Release;
 		};
-		EE767F26291A907100AFE6C0 /* Debug */ = {
+		EE767FB6292FAA9F00AFE6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MakeItGreat/Preview Content\"";
 				DEVELOPMENT_TEAM = MXSWN6Q9F5;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MakeItGreat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,18 +492,20 @@
 			};
 			name = Debug;
 		};
-		EE767F27291A907100AFE6C0 /* Release */ = {
+		EE767FB7292FAA9F00AFE6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MakeItGreat/Preview Content\"";
 				DEVELOPMENT_TEAM = MXSWN6Q9F5;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MakeItGreat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,7 +521,7 @@
 			};
 			name = Release;
 		};
-		EE767F29291A907100AFE6C0 /* Debug */ = {
+		EE767FB9292FAA9F00AFE6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -546,7 +541,7 @@
 			};
 			name = Debug;
 		};
-		EE767F2A291A907100AFE6C0 /* Release */ = {
+		EE767FBA292FAA9F00AFE6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -566,7 +561,7 @@
 			};
 			name = Release;
 		};
-		EE767F2C291A907100AFE6C0 /* Debug */ = {
+		EE767FBC292FAA9F00AFE6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -584,7 +579,7 @@
 			};
 			name = Debug;
 		};
-		EE767F2D291A907100AFE6C0 /* Release */ = {
+		EE767FBD292FAA9F00AFE6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -605,43 +600,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE767EF6291A907000AFE6C0 /* Build configuration list for PBXProject "MakeItGreat" */ = {
+		EE767F8C292FAA9D00AFE6C0 /* Build configuration list for PBXProject "MakeItGreat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE767F23291A907100AFE6C0 /* Debug */,
-				EE767F24291A907100AFE6C0 /* Release */,
+				EE767FB3292FAA9F00AFE6C0 /* Debug */,
+				EE767FB4292FAA9F00AFE6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE767F25291A907100AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreat" */ = {
+		EE767FB5292FAA9F00AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE767F26291A907100AFE6C0 /* Debug */,
-				EE767F27291A907100AFE6C0 /* Release */,
+				EE767FB6292FAA9F00AFE6C0 /* Debug */,
+				EE767FB7292FAA9F00AFE6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE767F28291A907100AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatTests" */ = {
+		EE767FB8292FAA9F00AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE767F29291A907100AFE6C0 /* Debug */,
-				EE767F2A291A907100AFE6C0 /* Release */,
+				EE767FB9292FAA9F00AFE6C0 /* Debug */,
+				EE767FBA292FAA9F00AFE6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE767F2B291A907100AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatUITests" */ = {
+		EE767FBB292FAA9F00AFE6C0 /* Build configuration list for PBXNativeTarget "MakeItGreatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE767F2C291A907100AFE6C0 /* Debug */,
-				EE767F2D291A907100AFE6C0 /* Release */,
+				EE767FBC292FAA9F00AFE6C0 /* Debug */,
+				EE767FBD292FAA9F00AFE6C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EE767EF3291A907000AFE6C0 /* Project object */;
+	rootObject = EE767F89292FAA9D00AFE6C0 /* Project object */;
 }
