@@ -14,6 +14,15 @@
 		EE767FA6292FAA9F00AFE6C0 /* MakeItGreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FA5292FAA9F00AFE6C0 /* MakeItGreatTests.swift */; };
 		EE767FB0292FAA9F00AFE6C0 /* MakeItGreatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FAF292FAA9F00AFE6C0 /* MakeItGreatUITests.swift */; };
 		EE767FB2292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FB1292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */; };
+		EE767FC42930DB1B00AFE6C0 /* AudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FC32930DB1B00AFE6C0 /* AudioView.swift */; };
+		EE767FC62930DBD900AFE6C0 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FC52930DBD900AFE6C0 /* AudioModel.swift */; };
+		EE767FC82930DC0E00AFE6C0 /* AudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FC72930DC0E00AFE6C0 /* AudioViewModel.swift */; };
+		EE767FCA2930DCB500AFE6C0 /* CHIRPS_2.WAV in Resources */ = {isa = PBXBuildFile; fileRef = EE767FC92930DCB500AFE6C0 /* CHIRPS_2.WAV */; };
+		EE767FCF2930EC2900AFE6C0 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FCE2930EC2800AFE6C0 /* ActivityView.swift */; };
+		EE767FD12930ED6800AFE6C0 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FD02930ED6800AFE6C0 /* ActivityViewModel.swift */; };
+		EE767FD42930F4E000AFE6C0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EE767FD32930F4E000AFE6C0 /* Lottie */; };
+		EE767FD72930F67400AFE6C0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FD62930F67400AFE6C0 /* LottieView.swift */; };
+		EE767FDA2930F91D00AFE6C0 /* star.json in Resources */ = {isa = PBXBuildFile; fileRef = EE767FD92930F91D00AFE6C0 /* star.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,14 @@
 		EE767FAB292FAA9F00AFE6C0 /* MakeItGreatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767FAF292FAA9F00AFE6C0 /* MakeItGreatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITests.swift; sourceTree = "<group>"; };
 		EE767FB1292FAA9F00AFE6C0 /* MakeItGreatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE767FC32930DB1B00AFE6C0 /* AudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
+		EE767FC52930DBD900AFE6C0 /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		EE767FC72930DC0E00AFE6C0 /* AudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewModel.swift; sourceTree = "<group>"; };
+		EE767FC92930DCB500AFE6C0 /* CHIRPS_2.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CHIRPS_2.WAV; sourceTree = "<group>"; };
+		EE767FCE2930EC2800AFE6C0 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		EE767FD02930ED6800AFE6C0 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		EE767FD62930F67400AFE6C0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		EE767FD92930F91D00AFE6C0 /* star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = star.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE767FD42930F4E000AFE6C0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +112,14 @@
 		EE767F93292FAA9D00AFE6C0 /* MakeItGreat */ = {
 			isa = PBXGroup;
 			children = (
+				EE767FD82930F8F100AFE6C0 /* Animation */,
+				EE767FD52930F64600AFE6C0 /* Library */,
 				EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */,
-				EE767FC2292FAB2500AFE6C0 /* Controller */,
 				EE767FC1292FAB1700AFE6C0 /* View */,
 				EE767FC0292FAB0700AFE6C0 /* Model */,
 				EE767FBF292FAAFE00AFE6C0 /* ViewModel */,
 				EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */,
+				EE767FCB2930DCBA00AFE6C0 /* Audios */,
 				EE767F9A292FAA9F00AFE6C0 /* Preview Content */,
 			);
 			path = MakeItGreat;
@@ -133,6 +153,8 @@
 		EE767FBF292FAAFE00AFE6C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EE767FC72930DC0E00AFE6C0 /* AudioViewModel.swift */,
+				EE767FD02930ED6800AFE6C0 /* ActivityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +162,7 @@
 		EE767FC0292FAB0700AFE6C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE767FC52930DBD900AFE6C0 /* AudioModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,15 +171,34 @@
 			isa = PBXGroup;
 			children = (
 				EE767F96292FAA9D00AFE6C0 /* ContentView.swift */,
+				EE767FC32930DB1B00AFE6C0 /* AudioView.swift */,
+				EE767FCE2930EC2800AFE6C0 /* ActivityView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		EE767FC2292FAB2500AFE6C0 /* Controller */ = {
+		EE767FCB2930DCBA00AFE6C0 /* Audios */ = {
 			isa = PBXGroup;
 			children = (
+				EE767FC92930DCB500AFE6C0 /* CHIRPS_2.WAV */,
 			);
-			path = Controller;
+			path = Audios;
+			sourceTree = "<group>";
+		};
+		EE767FD52930F64600AFE6C0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EE767FD62930F67400AFE6C0 /* LottieView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EE767FD82930F8F100AFE6C0 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				EE767FD92930F91D00AFE6C0 /* star.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +218,9 @@
 			dependencies = (
 			);
 			name = MakeItGreat;
+			packageProductDependencies = (
+				EE767FD32930F4E000AFE6C0 /* Lottie */,
+			);
 			productName = MakeItGreat;
 			productReference = EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */;
 			productType = "com.apple.product-type.application";
@@ -248,6 +293,9 @@
 				Base,
 			);
 			mainGroup = EE767F88292FAA9D00AFE6C0;
+			packageReferences = (
+				EE767FD22930F4E000AFE6C0 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = EE767F92292FAA9D00AFE6C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,8 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE767FDA2930F91D00AFE6C0 /* star.json in Resources */,
 				EE767F9C292FAA9F00AFE6C0 /* Preview Assets.xcassets in Resources */,
 				EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */,
+				EE767FCA2930DCB500AFE6C0 /* CHIRPS_2.WAV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +362,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
+				EE767FC42930DB1B00AFE6C0 /* AudioView.swift in Sources */,
+				EE767FD12930ED6800AFE6C0 /* ActivityViewModel.swift in Sources */,
+				EE767FC82930DC0E00AFE6C0 /* AudioViewModel.swift in Sources */,
+				EE767FD72930F67400AFE6C0 /* LottieView.swift in Sources */,
+				EE767FC62930DBD900AFE6C0 /* AudioModel.swift in Sources */,
 				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
+				EE767FCF2930EC2900AFE6C0 /* ActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +693,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE767FD22930F4E000AFE6C0 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE767FD32930F4E000AFE6C0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE767FD22930F4E000AFE6C0 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE767F89292FAA9D00AFE6C0 /* Project object */;
 }
