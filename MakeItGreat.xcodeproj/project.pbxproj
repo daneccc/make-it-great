@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA2067BD2934DCDA00D31CCA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2067BC2934DCDA00D31CCA /* Home.swift */; };
+		AA2067BF2934DCEA00D31CCA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2067BE2934DCEA00D31CCA /* Profile.swift */; };
+		AA2067C12934DCF200D31CCA /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2067C02934DCF200D31CCA /* Calendar.swift */; };
+		AA2067C32934DD0400D31CCA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2067C22934DD0400D31CCA /* Settings.swift */; };
+		AA2067C52934DD0D00D31CCA /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2067C42934DD0D00D31CCA /* Mode.swift */; };
 		EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */; };
 		EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F96292FAA9D00AFE6C0 /* ContentView.swift */; };
 		EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA2067BC2934DCDA00D31CCA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AA2067BE2934DCEA00D31CCA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		AA2067C02934DCF200D31CCA /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		AA2067C22934DD0400D31CCA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		AA2067C42934DD0D00D31CCA /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 		EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatApp.swift; sourceTree = "<group>"; };
 		EE767F96292FAA9D00AFE6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +158,11 @@
 			isa = PBXGroup;
 			children = (
 				EE767F96292FAA9D00AFE6C0 /* ContentView.swift */,
+				AA2067BC2934DCDA00D31CCA /* Home.swift */,
+				AA2067BE2934DCEA00D31CCA /* Profile.swift */,
+				AA2067C02934DCF200D31CCA /* Calendar.swift */,
+				AA2067C22934DD0400D31CCA /* Settings.swift */,
+				AA2067C42934DD0D00D31CCA /* Mode.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,8 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2067C32934DD0400D31CCA /* Settings.swift in Sources */,
 				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
+				AA2067BF2934DCEA00D31CCA /* Profile.swift in Sources */,
+				AA2067BD2934DCDA00D31CCA /* Home.swift in Sources */,
 				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
+				AA2067C12934DCF200D31CCA /* Calendar.swift in Sources */,
+				AA2067C52934DD0D00D31CCA /* Mode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
