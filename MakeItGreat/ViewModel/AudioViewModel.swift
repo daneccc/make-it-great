@@ -13,7 +13,7 @@ import AVFoundation
         let audio = audios[0]
 
         if let player = player, player.isPlaying {
-            player.stop()
+            player.pause()
 
         } else {
             let audioUrl = Bundle.main.url(forResource: audio.name, withExtension: audio.type)

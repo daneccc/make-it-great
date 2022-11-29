@@ -39,7 +39,7 @@ struct AudioView: View {
             audioViewModel.playSound()
         }
         .onDisappear {
-            audioViewModel.player?.stop()
+            audioViewModel.player?.pause()
         }
     }
 }
