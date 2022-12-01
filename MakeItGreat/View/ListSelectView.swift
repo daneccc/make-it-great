@@ -9,17 +9,20 @@ struct ListSelectView: View {
         NavigationStack {
             List {
                 ForEach(listSelectViewModel.listItems, id: \.id) { item in
-                    Button {
-                        item.completion.toggle()
-                        flag.toggle()
-                    } label: {
-                        HStack {
-                            Image(systemName: item.completion ? "sparkles" : "")
-                            Text("\(item.activity)")
+                    Section {
+                        Button {
+                            item.completion.toggle()
+                            flag.toggle()
+                        } label: {
+                            HStack {
+                                Image(systemName: item.completion ? "sparkles" : "")
+                                Text("\(item.activity)")
+                            }
                         }
                     }
                 }
             }
+            .listStyle(.insetGrouped)
             .onChange(of: flag, perform: { _ in
                 //
             })
