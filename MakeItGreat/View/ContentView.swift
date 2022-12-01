@@ -1,14 +1,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var dayPlanner = DayPlanner()
     var body: some View {
+        let currentDate = Date()
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                Text(dayPlanner.currentDate.monthYYYY())
+                    .font(.title)
+                    .fontWeight(.bold)
+                Spacer()
+                HStack {
+                    Image(systemName: "calendar")
+                    Image(systemName: "tray.fill")
+                    Image(systemName: "gear")
+                }
+                .font(.title)
+            }
+            .padding()
+            WeekView()
+            Spacer()
         }
-        .padding()
+    }
+}
+
+struct WeekView: View {
+    let week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    var body: some View {
+        HStack {
+            Spacer()
+            ForEach(week, id:\.self) { date in
+                Text(date)
+                Spacer()
+            }
+        }
     }
 }
 

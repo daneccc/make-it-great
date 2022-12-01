@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357EAA9C2934E097001479E7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EAA9B2934E097001479E7 /* Persistence.swift */; };
+		35828E252936294C009DFFC6 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35828E242936294C009DFFC6 /* CalendarModel.swift */; };
+		35828E2729362983009DFFC6 /* DayPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35828E2629362983009DFFC6 /* DayPlanner.swift */; };
 		EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */; };
 		EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F96292FAA9D00AFE6C0 /* ContentView.swift */; };
 		EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		357EAA9B2934E097001479E7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		35828E242936294C009DFFC6 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarModel.swift; path = MakeItGreat/CalendarModel.swift; sourceTree = SOURCE_ROOT; };
+		35828E2629362983009DFFC6 /* DayPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DayPlanner.swift; path = MakeItGreat/DayPlanner.swift; sourceTree = SOURCE_ROOT; };
 		EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatApp.swift; sourceTree = "<group>"; };
 		EE767F96292FAA9D00AFE6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */,
+				357EAA9B2934E097001479E7 /* Persistence.swift */,
 				EE767FC2292FAB2500AFE6C0 /* Controller */,
 				EE767FC1292FAB1700AFE6C0 /* View */,
 				EE767FC0292FAB0700AFE6C0 /* Model */,
@@ -133,6 +140,7 @@
 		EE767FBF292FAAFE00AFE6C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				35828E2629362983009DFFC6 /* DayPlanner.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 		EE767FC0292FAB0700AFE6C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35828E242936294C009DFFC6 /* CalendarModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35828E2729362983009DFFC6 /* DayPlanner.swift in Sources */,
+				357EAA9C2934E097001479E7 /* Persistence.swift in Sources */,
+				35828E252936294C009DFFC6 /* CalendarModel.swift in Sources */,
 				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
 				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
 			);
