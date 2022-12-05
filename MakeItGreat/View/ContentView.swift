@@ -5,19 +5,22 @@ struct ContentView: View {
     @State var textFieldText: String = ""
     
     var body: some View {
+            VStack {
+                Image("Bemvindo")
+                    .position(x: 700,y:150)
+            }
+
         VStack {
-            Text("Welcome to (AppName)")
-                .font(.title2)
+            Text("Meu nome é")
+                .font(.title)
                 .fontWeight(.semibold)
-        }
-        VStack {
-            Spacer()
-            Text("My name is")
-                .font(.title2)
-                .fontWeight(.semibold)
-            TextField("Please, insert your name here", text: $textFieldText)
+                .foregroundColor(Color("t"))
+            TextField("Escreva seu nome aqui", text: $textFieldText)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.gray)
+                .font(.system(size: 20, design: .rounded))
                 .padding()
-                .background(Color.gray.opacity(0.1).cornerRadius(10))
+            Divider()
             Spacer()
             Button(
                 action: {
@@ -25,7 +28,7 @@ struct ContentView: View {
                         saveText()
                     }
                 }, label: {
-                    Text("Continue")
+                    Text("Próximo")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(textIsAppropriate() ? Color.blue : Color.gray)
