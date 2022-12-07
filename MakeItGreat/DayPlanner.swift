@@ -19,4 +19,10 @@ class DayPlanner: ObservableObject {
     func dates() -> [Date] {
         calendarModel.datesInYear()
     }
+    func startDateOfWeeksInAYear() -> [Date] {
+        calendarModel.startDateOfWeeksInAYear()
+    }
+    func datesInAWeek(from date: Date) -> [Date] {
+        calendarModel.datesInAWeek(from: date)
+    }
 }
