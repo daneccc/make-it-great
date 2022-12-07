@@ -4,7 +4,7 @@ import SwiftUI
 struct MakeItGreatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainSplitView()
         }
     }
 }
