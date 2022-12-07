@@ -1,0 +1,26 @@
+
+{
+  "Activities": [
+    {
+      "name": "Brush Your Teeth",
+      "doingAt": "Morning"
+    },
+    {
+      "name": "Shower",
+      "doingAt": "Morning"
+    },
+    {
+      "name": "Homework",
+      "doingAt": "Afternoon"
+    },
+    {
+      "name": "Dinner",
+      "doingAt": "Night"
+    },
+    {
+      "name": "Breakfast",
+      "doingAt": "Night"
+    },
+  ]
+}
+
