@@ -6,7 +6,7 @@ class OptionsViewModel: ObservableObject {
     init() {
         self.options = [
             OptionsModel(name: "Board", image: "lasso"),
-            OptionsModel(name: "Statitics", image: "scribble"),
+            OptionsModel(name: "Statistics", image: "scribble"),
             OptionsModel(name: "Settings", image: "paperplane")
         ]
     }

@@ -4,6 +4,7 @@ struct MainSplitView: View {
 
     @State private var selectedOptionID: OptionsModel.ID?
     private var optionsVM = OptionsViewModel()
+    @State var flag: Bool = true
 
     var body: some View {
         NavigationSplitView {
@@ -21,13 +22,24 @@ struct MainSplitView: View {
             .navigationTitle("Person Name")
         } detail: {
             if let selectedOptionID, let board = optionsVM.options.filter({ $0.id == selectedOptionID }) {
-                if board.first?.name == "Board" {
+                switch board.first?.name {
+                case "Board":
                     ContentView()
-                } else {
-                    SettingsView()
+                case "Settings":
+                    SettingsView(flag: $flag)
+                case "Statistics":
+                    StatisticView()
+                default:
+                    ContentView()
                 }
             }
         }
+        .onChange(of: selectedOptionID, perform: { _ in
+            let board = optionsVM.options.filter({ $0.id == selectedOptionID })
+            if board.first?.name != "Settings" {
+                flag.toggle()
+            }
+        })
         .onAppear {
             selectedOptionID = optionsVM.options.first?.id
         }
