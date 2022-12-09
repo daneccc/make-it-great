@@ -18,15 +18,14 @@ struct SettingsView: View {
                     MorningGridView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 64)
-                            .background()
-                            .cornerRadius(12)
                         Text("Editar Atividades")
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
                             .bold()
-                            .frame(width: 613, height: 64)
                             .contentShape(Rectangle())
+                            .frame(width: 613, height: 64)
+                            .background(Color("secondColor"))
+                            .cornerRadius(12)
                     }
                 }
                 .padding(10)
@@ -35,15 +34,14 @@ struct SettingsView: View {
                     NewActivityView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 64)
-                            .background()
-                            .cornerRadius(12)
                         Text("Cadastrar Nova Atividade")
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
                             .bold()
-                            .frame(width: 613, height: 64)
                             .contentShape(Rectangle())
+                            .frame(width: 613, height: 64)
+                            .background(Color("secondColor"))
+                            .cornerRadius(12)
                     }
                 }
                 .padding(10)
@@ -52,15 +50,14 @@ struct SettingsView: View {
                     PerfilEditView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 64)
-                            .background()
-                            .cornerRadius(12)
                         Text("Editar Perfil")
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
                             .bold()
-                            .frame(width: 613, height: 64)
                             .contentShape(Rectangle())
+                            .frame(width: 613, height: 64)
+                            .background(Color("secondColor"))
+                            .cornerRadius(12)
                     }
                 }
                 .padding(10)

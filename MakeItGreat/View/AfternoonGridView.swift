@@ -20,7 +20,7 @@ struct AfternoonGridView: View {
                     Text("Tarde")
                         .bold()
                         .font(.system(size: 42))
-                        .foregroundColor(.red)
+                        .foregroundColor(Color("thirdColor"))
                 }
                 .padding(15)
 
@@ -29,6 +29,7 @@ struct AfternoonGridView: View {
                         Text("Higiene e Cuidados Pessoais")
                             .bold()
                             .font(.system(size: 42))
+                            .foregroundColor(Color("fourthColor"))
                             .padding(15)
                         LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
                             ForEach($activityGridVM1.activities, id: \.id) { $activity in
@@ -54,6 +55,7 @@ struct AfternoonGridView: View {
                         Text("Aprendizado")
                             .bold()
                             .font(.system(size: 42))
+                            .foregroundColor(Color("fourthColor"))
                             .padding(15)
                         LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
                             ForEach($activityGridVM2.activities, id: \.id) { $activity in
@@ -87,6 +89,7 @@ struct AfternoonGridView: View {
                     Text("Voltar")
                         .bold()
                         .font(.system(size: 30))
+                        .foregroundColor(Color("secondColor"))
                 }
             }
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -96,6 +99,7 @@ struct AfternoonGridView: View {
                     Text("Próximo")
                         .bold()
                         .font(.system(size: 30))
+                        .foregroundColor(Color("secondColor"))
                 }
             }
         }

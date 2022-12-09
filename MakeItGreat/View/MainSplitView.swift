@@ -17,9 +17,17 @@ struct MainSplitView: View {
                     Text("\(option.name)")
                         .font(.system(.title3, design: .rounded))
                         .bold()
+                        .foregroundColor(Color("secondColor"))
                 }
             }
-            .navigationTitle("Person Name")
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Person Name")
+                        .foregroundColor(Color("fourthColor"))
+                        .font(.system(size: 28))
+                        .bold()
+                }
+            }
         } detail: {
             if let selectedOptionID, let board = optionsVM.options.filter({ $0.id == selectedOptionID }) {
                 switch board.first?.name {

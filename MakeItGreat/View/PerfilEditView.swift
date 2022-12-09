@@ -48,6 +48,7 @@ struct PerfilEditView: View {
                     Text("Voltar")
                         .bold()
                         .font(.system(size: 30))
+                        .foregroundColor(Color("secondColor"))
                 }
 
             }
@@ -59,6 +60,7 @@ struct PerfilEditView: View {
                     Text("Salvar")
                         .bold()
                         .font(.system(size: 30))
+                        .foregroundColor(Color("secondColor"))
                 }
                 .disabled(name.isEmpty || age <= 0)
             }
@@ -66,6 +68,7 @@ struct PerfilEditView: View {
                 Text("Editar Perfil")
                     .bold()
                     .font(.system(size: 36))
+                    .foregroundColor(Color("fourthColor"))
             }
         }
         .onChange(of: flag) { _ in
