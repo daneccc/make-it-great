@@ -54,7 +54,6 @@ struct PerfilEditView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    print("salvar")
                     // executar função para salvar novos dados usando Name e Age
                 } label: {
                     Text("Salvar")

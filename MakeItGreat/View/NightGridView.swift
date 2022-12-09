@@ -35,7 +35,9 @@ struct NightGridView: View {
                             ForEach($activityGridVM1.activities, id: \.id) { $activity in
                                 ZStack {
                                     Rectangle()
-                                        .foregroundColor(Color(activity.completed ? .yellow : .blue))
+                                        .foregroundColor(
+                                            Color(activity.completed ? "firstColor" : "secondColor")
+                                        )
                                         .frame(width: 191, height: 174)
                                         .cornerRadius(39)
                                         .onTapGesture {
@@ -61,7 +63,9 @@ struct NightGridView: View {
                             ForEach($activityGridVM2.activities, id: \.id) { $activity in
                                 ZStack {
                                     Rectangle()
-                                        .foregroundColor(Color(activity.completed ? .yellow : .blue))
+                                        .foregroundColor(
+                                            Color(activity.completed ? "firstColor" : "secondColor")
+                                        )
                                         .frame(width: 191, height: 174)
                                         .cornerRadius(39)
                                         .onTapGesture {

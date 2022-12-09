@@ -3,8 +3,10 @@ import SwiftUI
 struct NewActivityView: View {
     @Environment(\.dismiss) private var dismiss
 
+    let times = ["Manhã", "Tarde", "Noite"]
     @State private var title: String = ""
-    @State private var time: Int = 0
+    @State private var selectedTime: String = "Manhã"
+
     @Binding var flag: Bool
 
     var body: some View {
@@ -28,12 +30,18 @@ struct NewActivityView: View {
                         .multilineTextAlignment(.center)
                         .padding(30)
 
-                    TextField("", value: $time, formatter: NumberFormatter())
-                        .frame(width: 662, height: 53)
-                        .background(Color(cgColor: UIColor(red: 0.817, green: 0.817, blue: 0.817, alpha: 0.24).cgColor))
-                        .cornerRadius(10)
-                        .multilineTextAlignment(.center)
-                        .keyboardType(.decimalPad)
+                    Picker("Selecione o período do dia", selection: $selectedTime) {
+                        ForEach(times, id: \.self) { time in
+                                Text(time)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color("fourthColor"))
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                    .frame(width: 662, height: 53)
+                    .scaledToFit()
+                    .scaleEffect(CGSize(width: 1, height: 1.2))
+                    .cornerRadius(10)
                 }
             }
             .padding(.top, 40)
@@ -54,7 +62,6 @@ struct NewActivityView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    print("salvar")
                     // executar função para salvar nova atividade
                 } label: {
                     Text("Salvar")
@@ -62,7 +69,7 @@ struct NewActivityView: View {
                         .font(.system(size: 30))
                         .foregroundColor(Color("secondColor"))
                 }
-                .disabled(title.isEmpty || time <= 0)
+                .disabled(title.isEmpty)
             }
             ToolbarItem(placement: .principal) {
                 Text("Nova Atividade")
