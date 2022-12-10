@@ -24,7 +24,7 @@ struct MainSplitView: View {
             if let selectedOptionID, let board = optionsVM.options.filter({ $0.id == selectedOptionID }) {
                 switch board.first?.name {
                 case "Board":
-                    ContentView()
+                    HomeScreenView()
                 case "Settings":
                     SettingsView(flag: $flag)
                 case "Statistics":
@@ -34,6 +34,7 @@ struct MainSplitView: View {
                 }
             }
         }
+        .accentColor(Theme.action)
         .onChange(of: selectedOptionID, perform: { _ in
             let board = optionsVM.options.filter({ $0.id == selectedOptionID })
             if board.first?.name != "Settings" {
