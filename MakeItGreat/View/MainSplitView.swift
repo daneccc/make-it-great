@@ -19,7 +19,7 @@ struct MainSplitView: View {
                         .bold()
                 }
             }
-            .navigationTitle("Person Name")
+            .navigationTitle("MonDay")
         } detail: {
             if let selectedOptionID, let board = optionsVM.options.filter({ $0.id == selectedOptionID }) {
                 switch board.first?.name {
@@ -27,10 +27,10 @@ struct MainSplitView: View {
                     HomeScreenView()
                 case "Settings":
                     SettingsView(flag: $flag)
-                case "Statistics":
+                case "History":
                     StatisticView()
                 default:
-                    ContentView()
+                    HomeScreenView()
                 }
             }
         }

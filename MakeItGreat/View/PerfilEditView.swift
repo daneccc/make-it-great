@@ -1,10 +1,12 @@
 import SwiftUI
 
 struct PerfilEditView: View {
+
     @Environment(\.dismiss) private var dismiss
     @State private var name: String = ""
     @State private var age: Int = 0
     @Binding var flag: Bool
+
     var body: some View {
         NavigationStack {
             HStack {
@@ -53,7 +55,6 @@ struct PerfilEditView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    print("salvar")
                     // executar função para salvar novos dados usando Name e Age
                 } label: {
                     Text("Salvar")
