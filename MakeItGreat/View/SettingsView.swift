@@ -15,16 +15,14 @@ struct SettingsView: View {
                     MorningGridView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 84)
-                            .background()
-                            .cornerRadius(12)
                         Text("Editar Atividades")
-                            .font(.system(size: 24.0, weight: .heavy, design: .rounded))
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
-                            .tracking(2)
-                            .frame(width: 613, height: 84)
+                            .bold()
                             .contentShape(Rectangle())
+                            .frame(width: 613, height: 64)
+                            .background(Theme.action)
+                            .cornerRadius(12)
                     }
                 }
                 .padding(20)
@@ -33,16 +31,14 @@ struct SettingsView: View {
                     NewActivityView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 84)
-                            .background()
-                            .cornerRadius(12)
                         Text("Cadastrar Nova Atividade")
-                            .font(.system(size: 24.0, weight: .heavy, design: .rounded))
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
-                            .tracking(2)
-                            .frame(width: 613, height: 84)
+                            .bold()
                             .contentShape(Rectangle())
+                            .frame(width: 613, height: 64)
+                            .background(Theme.action)
+                            .cornerRadius(12)
                     }
                 }
                 .padding(20)
@@ -51,16 +47,14 @@ struct SettingsView: View {
                     PerfilEditView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 84)
-                            .background()
-                            .cornerRadius(12)
                         Text("Editar Perfil")
-                            .font(.system(size: 24.0, weight: .heavy, design: .rounded))
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
-                            .tracking(2)
-                            .frame(width: 613, height: 84)
+                            .bold()
                             .contentShape(Rectangle())
+                            .frame(width: 613, height: 64)
+                            .background(Theme.action)
+                            .cornerRadius(12)
                     }
                 }
                 .padding(20)

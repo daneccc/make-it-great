@@ -1,10 +1,3 @@
-//
-//  ActivityListViewModel.swift
-//  MakeItGreat
-//
-//  Created by Ayslana Riene on 30/11/22.
-//
-
 import Foundation
 import CoreData
 
