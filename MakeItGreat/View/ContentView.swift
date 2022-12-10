@@ -18,10 +18,16 @@ struct ContentView: View {
                 .font(.title)
             }
             .padding()
-            SwipeableStack(dayPlanner.startDateOfWeeksInAYear()) { date in
+            let mondayOfTheCurrentDate = dayPlanner.startDayOfWeek(from: dayPlanner.currentDate)
+            SwipeableStack(dayPlanner.startDateOfWeeksInAYear(), jumpTo: mondayOfTheCurrentDate) { date in
                 WeekView(of: date)
             }
-            Spacer()
+            .frame(maxHeight: 100)
+            SwipeableStack([1, 2, 3], jumpTo: 2) { _ in
+                RoundedRectangle(cornerRadius: 25)
+                    .fill(Color.yellow)
+                    .ignoresSafeArea()
+            }
         }
         .environmentObject(dayPlanner)
     }
@@ -30,10 +36,14 @@ struct ContentView: View {
 // generic types
 struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content: View {
     var whateverData: [WhateverTypeOfData] = []
-    @ViewBuilder let content: (WhateverTypeOfData) -> Content
-    init(_ data: [WhateverTypeOfData], @ViewBuilder content: @escaping (WhateverTypeOfData) -> Content) {
+    let content: (WhateverTypeOfData) -> Content
+    var jumpTo: WhateverTypeOfData?
+    init(_ data: [WhateverTypeOfData], jumpTo: WhateverTypeOfData? = nil, @ViewBuilder content: @escaping (WhateverTypeOfData) -> Content) {
         self.whateverData = data
         self.content = content
+        if let jumpTo {
+            self.jumpTo = jumpTo
+        }
     }
     @State private var dataIndex = 0
     @State private var dragged = CGSize.zero
@@ -51,18 +61,25 @@ struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content
                 if previousExist {
                     content(whateverData[dataIndex - 1]) // previous
                         .frame(width: geo.size.width)
-                        .background(.green)
+//                        .background(.green)
                         .offset(x: previousExist ? -frameWidth : 0)
                 }
                 content(whateverData[dataIndex]) // current
                     .frame(width: geo.size.width)
-                    .background(.yellow)
+//                    .background(.yellow)
                     .offset(x: previousExist ? -frameWidth : 0)
                 if nextExist {
                     content(whateverData[dataIndex + 1]) // next
                         .frame(width: geo.size.width)
-                        .background(.red)
+//                        .background(.red)
                         .offset(x: previousExist ? -frameWidth : 0)
+                }
+            }
+            .onAppear {
+                if let jumpTo {
+                    if let pos = whateverData.firstIndex(of: jumpTo) {
+                        dataIndex = pos
+                    }
                 }
             }
             .offset(x: dragged.width)
@@ -89,7 +106,6 @@ struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content
                     }
                 }
             )
-            
         }
     }
 }
@@ -97,7 +113,7 @@ struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content
 struct WeekView: View {
     @EnvironmentObject var dayplanner: DayPlanner
     let date: Date
-    let week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     init(of date: Date) {
         self.date = date
     }
@@ -109,7 +125,19 @@ struct WeekView: View {
                 let dateWeek = datesInAWeek[date]
                 VStack {
                     Text(week[date])
+                        .padding(.bottom, 5)
                     Text(dateWeek.dayNum())
+                        .fontWeight(.bold)
+                        .foregroundColor(dayplanner.isCurrent(dateWeek) ? Color.white : Color.black)
+                        .background(
+                            ZStack{
+                                if dayplanner.isCurrent(dateWeek) {
+                                    Circle()
+                                        .fill(.blue)
+                                        .frame(width: 40, height: 40)
+                                        
+                                }
+                            })
                 }
                 Spacer()
             }
@@ -120,5 +148,27 @@ struct WeekView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct CreateButton: View {
+    @State private var isPresented = true
+    var body: some View {
+        Button(action: {
+            self.isPresented.toggle()
+        }) {
+            ZStack {
+                Circle()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(.green)
+                Image(systemName: "plus")
+                    .imageScale(.large)
+                    .foregroundColor(.white)
+            }
+        }
+        .padding()
+        .sheet(isPresented: $isPresented) {
+            CreateView()
+        }
     }
 }

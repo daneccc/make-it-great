@@ -9,7 +9,6 @@ import Foundation
 
 class DayPlanner: ObservableObject {
     @Published private var calendarModel = CalendarModel()
-    
     var currentDate: Date {
         return calendarModel.currentDate
     }
@@ -24,5 +23,11 @@ class DayPlanner: ObservableObject {
     }
     func datesInAWeek(from date: Date) -> [Date] {
         calendarModel.datesInAWeek(from: date)
+    }
+    func startDayOfWeek(from date: Date) -> Date {
+        calendarModel.startDateOfWeek(from: date)
+    }
+    func isCurrent(_ date: Date) -> Bool {
+        return date == currentDate
     }
 }

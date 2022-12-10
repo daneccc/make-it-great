@@ -61,6 +61,12 @@ struct CalendarModel {
         }
         return startOfWeekArr
     }
+    
+    func startDateOfWeek(from date: Date) -> Date {
+        let currentWeek = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: date)
+        return calendar.date(from: currentWeek)!
+        
+    }
 }
 
 extension Date {
