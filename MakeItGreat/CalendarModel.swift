@@ -26,12 +26,10 @@ struct CalendarModel {
         startOfYear = calendar.date(from: DateComponents(year: currentYear, month: 1, day: 1))!
     }
     
-    mutating func setCurrentDate(to dateStr: String) {
-        dateFormatter.dateFormat = "yyyyMMdd"
-        let date = dateFormatter.date(from: dateStr)
-        if let date {
-            currentDate = date
-        }
+    mutating func setCurrentDate(to date: Date) {
+        let dateStr = dateFormatter.string(from: date)
+        currentDate = dateFormatter.date(from: dateStr)!
+
     }
     
     func datesInYear() -> [Date] {

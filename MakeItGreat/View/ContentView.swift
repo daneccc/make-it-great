@@ -19,11 +19,11 @@ struct ContentView: View {
             }
             .padding()
             let mondayOfTheCurrentDate = dayPlanner.startDayOfWeek(from: dayPlanner.currentDate)
-            SwipeableStack(dayPlanner.startDateOfWeeksInAYear(), jumpTo: mondayOfTheCurrentDate) { date in
-                WeekView(of: date)
+            SwipeableStack(dayPlanner.startDateOfWeeksInAYear(), jumpTo: mondayOfTheCurrentDate) { (date, pos) in
+                WeekView(of: date, viewPosition: pos)
             }
             .frame(maxHeight: 100)
-            SwipeableStack([1, 2, 3], jumpTo: 2) { _ in
+            SwipeableStack([1, 2, 3], jumpTo: 2) { (_, _) in
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.yellow)
                     .ignoresSafeArea()
@@ -36,9 +36,9 @@ struct ContentView: View {
 // generic types
 struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content: View {
     var whateverData: [WhateverTypeOfData] = []
-    let content: (WhateverTypeOfData) -> Content
+    let content: (WhateverTypeOfData, ViewPosition) -> Content
     var jumpTo: WhateverTypeOfData?
-    init(_ data: [WhateverTypeOfData], jumpTo: WhateverTypeOfData? = nil, @ViewBuilder content: @escaping (WhateverTypeOfData) -> Content) {
+    init(_ data: [WhateverTypeOfData], jumpTo: WhateverTypeOfData? = nil, @ViewBuilder content: @escaping (WhateverTypeOfData, ViewPosition) -> Content) {
         self.whateverData = data
         self.content = content
         if let jumpTo {
@@ -59,17 +59,17 @@ struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content
 
             HStack(spacing: 0) {
                 if previousExist {
-                    content(whateverData[dataIndex - 1]) // previous
+                    content(whateverData[dataIndex - 1], .previousView) // previous
                         .frame(width: geo.size.width)
 //                        .background(.green)
                         .offset(x: previousExist ? -frameWidth : 0)
                 }
-                content(whateverData[dataIndex]) // current
+                content(whateverData[dataIndex], .centerView) // current
                     .frame(width: geo.size.width)
 //                    .background(.yellow)
                     .offset(x: previousExist ? -frameWidth : 0)
                 if nextExist {
-                    content(whateverData[dataIndex + 1]) // next
+                    content(whateverData[dataIndex + 1], .nextView) // next
                         .frame(width: geo.size.width)
 //                        .background(.red)
                         .offset(x: previousExist ? -frameWidth : 0)
@@ -110,12 +110,20 @@ struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content
     }
 }
 
+enum ViewPosition {
+    case centerView
+    case previousView
+    case nextView
+}
+
 struct WeekView: View {
     @EnvironmentObject var dayplanner: DayPlanner
     let date: Date
     let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    init(of date: Date) {
+    var viewPosition = ViewPosition.centerView
+    init(of date: Date, viewPosition: ViewPosition) {
         self.date = date
+        self.viewPosition = viewPosition
     }
     var body: some View {
         let datesInAWeek = dayplanner.datesInAWeek(from: date)
@@ -139,8 +147,18 @@ struct WeekView: View {
                                 }
                             })
                 }
+                .onTapGesture {
+                    dayplanner.setCurrentDate(to: dateWeek)
+                }
                 Spacer()
             }
+        }
+        .onChange(of: date) { dateAux in
+            if viewPosition == .centerView {
+                dayplanner.setCurrentDate(to: dateAux)
+            }
+            // print("change of date in \(dateAux) \(viewPosition)")
+            Spacer()
         }
     }
 }

@@ -12,8 +12,8 @@ class DayPlanner: ObservableObject {
     var currentDate: Date {
         return calendarModel.currentDate
     }
-    func setCurrentDate(to dateStr: String) {
-        calendarModel.setCurrentDate(to: dateStr)
+    func setCurrentDate(to date: Date) {
+        calendarModel.setCurrentDate(to: date)
     }
     func dates() -> [Date] {
         calendarModel.datesInYear()
