@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356B5E3429463115005EE3DA /* PlannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B5E3329463115005EE3DA /* PlannerModel.swift */; };
 		357EAA9C2934E097001479E7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EAA9B2934E097001479E7 /* Persistence.swift */; };
 		35828E252936294C009DFFC6 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35828E242936294C009DFFC6 /* CalendarModel.swift */; };
 		35828E2729362983009DFFC6 /* DayPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35828E2629362983009DFFC6 /* DayPlanner.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		356B5E3329463115005EE3DA /* PlannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlannerModel.swift; path = MakeItGreat/View/PlannerModel.swift; sourceTree = SOURCE_ROOT; };
 		357EAA9B2934E097001479E7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		35828E242936294C009DFFC6 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarModel.swift; path = MakeItGreat/CalendarModel.swift; sourceTree = SOURCE_ROOT; };
 		35828E2629362983009DFFC6 /* DayPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DayPlanner.swift; path = MakeItGreat/DayPlanner.swift; sourceTree = SOURCE_ROOT; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				35828E242936294C009DFFC6 /* CalendarModel.swift */,
+				356B5E3329463115005EE3DA /* PlannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				357EAA9C2934E097001479E7 /* Persistence.swift in Sources */,
 				35828E252936294C009DFFC6 /* CalendarModel.swift in Sources */,
 				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
+				356B5E3429463115005EE3DA /* PlannerModel.swift in Sources */,
 				35EB49482940D2BF008DB379 /* CreateView.swift in Sources */,
 				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
 			);

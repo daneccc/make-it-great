@@ -19,8 +19,7 @@ struct CreateView: View {
                 WhatView(showWhatView: $showWhatView)
                     .padding()
             } else {
-                TaskField(dayPlanner.taskDescription)
-                    .padding()
+                CreateTaskView()
             }
             
             Spacer()
@@ -94,6 +93,28 @@ struct TaskField: View {
         }
         .onChange(of: activity) { desc in
             dayplanner.taskDescription = desc // sempre q muda salva na viewmodel var
+        }
+    }
+}
+
+struct CreateTaskView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var dayplanner: DayPlanner
+    var body: some View {
+        VStack {
+            TaskField(dayplanner.taskDescription)
+            Spacer()
+            Button(action: {
+                dayplanner.createTask()
+                presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("Adicionar atividade")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .font(.title2)
+                    .fontWeight(.bold)
+            }
+            .buttonStyle(.bordered)
         }
     }
 }

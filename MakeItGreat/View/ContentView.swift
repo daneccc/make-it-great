@@ -26,9 +26,7 @@ struct ContentView: View {
                 }
                 .frame(maxHeight: 100)
                 SwipeableStack([1, 2, 3], jumpTo: 2) { (_, _) in
-                    RoundedRectangle(cornerRadius: 23)
-                        .fill(Color.gray)
-                        .ignoresSafeArea()
+                    DayView()
                 }
             }
             CreateButton()
@@ -183,6 +181,59 @@ struct CreateButton: View {
         .padding()
         .sheet(isPresented: $isPresented) {
             CreateView()
+        }
+    }
+}
+
+struct DayView: View {
+    @EnvironmentObject var dayplanner: DayPlanner
+    var body: some View {
+        ZStack(alignment: .topLeading) {
+            RoundedRectangle(cornerRadius: 23)
+                .fill(Color.gray)
+                .ignoresSafeArea()
+            LazyVStack(spacing: 0) {
+                ForEach(dayplanner.tasks, id:\.self) { task in
+                    TaskView(for: task)
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+struct TaskView: View {
+    private var task: Task
+    init(for task: Task) {
+        self.task = task
+    }
+    var body: some View {
+        HStack {
+            Text("6:00")
+                .font(.system(size: 24))
+            VStack(spacing: 0) {
+                ZStack {
+                    Circle()
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(.blue)
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                        .imageScale(.large)
+                }
+                Rectangle()
+                    .fill(.black)
+                    .frame(width: 5, height: 30)
+            }
+            VStack(alignment: .leading) {
+                Text("6:00")
+                Text(task.taskDescription)
+                    .font(.system(size: 24))
+                    .fontWeight(.bold)
+            }
+            Spacer()
+            Image(systemName: "checkmark")
+                .padding(5)
+                .background(Color.white, in: Circle())
         }
     }
 }
