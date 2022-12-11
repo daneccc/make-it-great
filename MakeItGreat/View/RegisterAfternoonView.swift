@@ -17,7 +17,7 @@ struct RegisterAfternoonView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Text("Editar as Atividades da")
+                    Text("Adicionar as Atividades da")
                         .font(.system(size: 38.0, weight: .heavy, design: .rounded))
                         .foregroundColor(Theme.font)
                         .tracking(2)
@@ -103,7 +103,7 @@ struct RegisterAfternoonView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-                    NightGridView(flag: $flag)
+                    RegisterNightView(flag: $flag)
                 } label: {
                     Text("Próximo")
                         .font(.system(size: 26, weight: .heavy, design: .rounded))

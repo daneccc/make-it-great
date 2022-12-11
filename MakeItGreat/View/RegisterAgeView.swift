@@ -10,6 +10,8 @@ import SwiftUI
 struct RegisterAgeView: View {
     @State var textFieldText: String = ""
     @State private var age: String = ""
+    @Environment(\.dismiss) private var dismiss
+    @Binding var flag: Bool
     var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
@@ -58,11 +60,20 @@ struct RegisterAgeView: View {
         }
         .navigationBarBackButtonHidden()
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    print("próximo")
-                    // executar função para salvar novos dados usando Name e Age
+                    dismiss()
                 } label: {
+                    Text("Voltar")
+                        .font(.system(size: 26, weight: .heavy, design: .rounded))
+                        .foregroundColor(Theme.action)
+                        .tracking(2)
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink {
+                    RegisterMorningView(flag: $flag)
+                }  label: {
                     Text("Próximo")
                         .font(.system(size: 26, weight: .heavy, design: .rounded))
                         .foregroundColor(Theme.action)
@@ -70,18 +81,9 @@ struct RegisterAgeView: View {
                 }
                 .disabled(age.isEmpty)
             }
-            ToolbarItem(placement: .principal) {
-                Text("Editar Perfil")
-                    .font(.system(size: 36, weight: .heavy, design: .rounded))
-                    .foregroundColor(Theme.font)
-                    .tracking(2)
-            }
         }
-    }
-}
-
-struct RegisterAgeView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegisterAgeView()
+        .onChange(of: flag) { _ in
+            dismiss()
+        }
     }
 }

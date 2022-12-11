@@ -17,7 +17,7 @@ struct RegisterNightView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Text("Editar as Atividades da")
+                    Text("Adicionar as Atividades da")
                         .font(.system(size: 38.0, weight: .heavy, design: .rounded))
                         .foregroundColor(Theme.font)
                         .tracking(2)

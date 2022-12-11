@@ -22,6 +22,10 @@
 		D4DEF9A829464A1C003EDD71 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9A729464A1C003EDD71 /* UserDefaultsController.swift */; };
 		D4DEF9AA29464BF0003EDD71 /* ViewRouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9A929464BF0003EDD71 /* ViewRouterController.swift */; };
 		D4DEF9AC29464E12003EDD71 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9AB29464E12003EDD71 /* MotherView.swift */; };
+		D4DEF9AE2946890F003EDD71 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9AD2946890F003EDD71 /* CalendarView.swift */; };
+		D4DEF9B029468944003EDD71 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9AF29468944003EDD71 /* CalendarModel.swift */; };
+		D4DEF9B42946898B003EDD71 /* PlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9B32946898B003EDD71 /* PlannerViewModel.swift */; };
+		D4DEF9B6294689CE003EDD71 /* PlannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */; };
 		EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */; };
 		EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F96292FAA9D00AFE6C0 /* ContentView.swift */; };
 		EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */; };
@@ -76,6 +80,10 @@
 		D4DEF9A729464A1C003EDD71 /* UserDefaultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
 		D4DEF9A929464BF0003EDD71 /* ViewRouterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouterController.swift; sourceTree = "<group>"; };
 		D4DEF9AB29464E12003EDD71 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		D4DEF9AD2946890F003EDD71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		D4DEF9AF29468944003EDD71 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarModel.swift; path = MakeItGreat/View/CalendarModel.swift; sourceTree = SOURCE_ROOT; };
+		D4DEF9B32946898B003EDD71 /* PlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerViewModel.swift; sourceTree = "<group>"; };
+		D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlannerModel.swift; path = MakeItGreat/ViewModel/PlannerModel.swift; sourceTree = SOURCE_ROOT; };
 		EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatApp.swift; sourceTree = "<group>"; };
 		EE767F96292FAA9D00AFE6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +218,7 @@
 				D43919042944079B006FC895 /* ActivityListViewModel.swift */,
 				EECE02392938E6DE00F41460 /* OptionsViewModel.swift */,
 				EECE02452940767100F41460 /* ActivityGridViewModel.swift */,
+				D4DEF9B32946898B003EDD71 /* PlannerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -219,6 +228,8 @@
 			children = (
 				EECE02372938E63400F41460 /* OptionsModel.swift */,
 				EECE02432940761900F41460 /* ActivityGridModel.swift */,
+				D4DEF9AF29468944003EDD71 /* CalendarModel.swift */,
+				D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +254,7 @@
 				D4DEF9A129460CAD003EDD71 /* RegisterNightView.swift */,
 				D4DEF9A529460CC8003EDD71 /* RegisterAfternoonView.swift */,
 				D4DEF9AB29464E12003EDD71 /* MotherView.swift */,
+				D4DEF9AD2946890F003EDD71 /* CalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,17 +421,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DEF9B42946898B003EDD71 /* PlannerViewModel.swift in Sources */,
 				D43918FB294214A9006FC895 /* CoreDataHelper.swift in Sources */,
+				D4DEF9B029468944003EDD71 /* CalendarModel.swift in Sources */,
 				D4DEF9AC29464E12003EDD71 /* MotherView.swift in Sources */,
 				D4DEF9A629460CC8003EDD71 /* RegisterAfternoonView.swift in Sources */,
 				D439190129424527006FC895 /* Activities.xcdatamodeld in Sources */,
 				EECE02382938E63400F41460 /* OptionsModel.swift in Sources */,
 				EECE02462940767100F41460 /* ActivityGridViewModel.swift in Sources */,
 				D4DEF9A229460CAD003EDD71 /* RegisterNightView.swift in Sources */,
+				D4DEF9AE2946890F003EDD71 /* CalendarView.swift in Sources */,
 				D43919052944079B006FC895 /* ActivityListViewModel.swift in Sources */,
 				EECE023E29406B7600F41460 /* StatisticView.swift in Sources */,
 				EECE023A2938E6DE00F41460 /* OptionsViewModel.swift in Sources */,
 				EECE02342938D0EF00F41460 /* SettingsView.swift in Sources */,
+				D4DEF9B6294689CE003EDD71 /* PlannerModel.swift in Sources */,
 				EECE024A29407EA600F41460 /* NightGridView.swift in Sources */,
 				EECE024029406E1200F41460 /* NewActivityView.swift in Sources */,
 				D4DEF99E29450407003EDD71 /* RegisterActivityView.swift in Sources */,

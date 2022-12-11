@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RegisterMorningActivities: View {
+struct RegisterMorningView: View {
     @Environment(\.dismiss) private var dismiss
     let columns = Array(repeating: GridItem(.flexible(minimum: 20), spacing: 0), count: 3)
     @ObservedObject var activityGridVM1 = ActivityGridViewModel()
@@ -17,7 +17,7 @@ struct RegisterMorningActivities: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Text("Editar as Atividades da")
+                    Text("Adicionar as Atividades da")
                         .font(.system(size: 38.0, weight: .heavy, design: .rounded))
                         .foregroundColor(Theme.font)
                         .tracking(2)
@@ -101,7 +101,7 @@ struct RegisterMorningActivities: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-                    AfternoonGridView(flag: $flag)
+                    RegisterAfternoonView(flag: $flag)
                 } label: {
                     Text("Próximo")
                         .font(.system(size: 26, weight: .heavy, design: .rounded))
