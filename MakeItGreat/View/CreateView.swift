@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct CreateView: View {
+    var body: some View {
+        VStack {
+            HeaderView()
+                .padding()
+            Divider()
+            WhatView()
+            Spacer()
+        }
+    }
+}
+
+struct HeaderView: View {
     @Environment(\.presentationMode) var presentationMode
-    
+
     var body: some View {
         HStack {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -21,7 +33,13 @@ struct CreateView: View {
         }
         .font(.title)
         .fontWeight(.bold)
-        .padding()
+    }
+}
+
+struct WhatView: View {
+    var body: some View {
+        Text("What?")
+            .font(.title)
     }
 }
 

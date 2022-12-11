@@ -3,31 +3,36 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var dayPlanner = DayPlanner()
     var body: some View {
+        let mondayOfTheCurrentDate = dayPlanner.startDateOfWeek(from: dayPlanner.currentDate)
         let currentDate = Date()
-        VStack {
-            HStack {
-                Text(dayPlanner.currentDate.monthYYYY())
-                    .font(.title)
-                    .fontWeight(.bold)
-                Spacer()
+        ZStack(alignment: .bottomTrailing) {
+            VStack {
                 HStack {
-                    Image(systemName: "calendar")
-                    Image(systemName: "tray.fill")
-                    Image(systemName: "gear")
+                    Text(mondayOfTheCurrentDate.monthYYYY())
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                    HStack {
+                        Image(systemName: "calendar")
+                        Image(systemName: "tray.fill")
+                        Image(systemName: "gear")
+                    }
+                    .font(.title)
                 }
-                .font(.title)
+                .padding()
+                let mondayOfTheCurrentDate = dayPlanner.startDateOfWeek(from: dayPlanner.currentDate)
+                SwipeableStack(dayPlanner.startDateOfWeeksInAYear(), jumpTo: mondayOfTheCurrentDate) { (date, pos) in
+                    WeekView(of: date, viewPosition: pos)
+                }
+                .frame(maxHeight: 100)
+                SwipeableStack([1, 2, 3], jumpTo: 2) { (_, _) in
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(Color.yellow)
+                        .ignoresSafeArea()
+                }
             }
-            .padding()
-            let mondayOfTheCurrentDate = dayPlanner.startDayOfWeek(from: dayPlanner.currentDate)
-            SwipeableStack(dayPlanner.startDateOfWeeksInAYear(), jumpTo: mondayOfTheCurrentDate) { (date, pos) in
-                WeekView(of: date, viewPosition: pos)
-            }
-            .frame(maxHeight: 100)
-            SwipeableStack([1, 2, 3], jumpTo: 2) { (_, _) in
-                RoundedRectangle(cornerRadius: 25)
-                    .fill(Color.yellow)
-                    .ignoresSafeArea()
-            }
+                
+            CreateButton()
         }
         .environmentObject(dayPlanner)
     }
@@ -155,20 +160,15 @@ struct WeekView: View {
         }
         .onChange(of: date) { dateAux in
             if viewPosition == .centerView {
-                dayplanner.setCurrentDate(to: dateAux)
+                let position = dayplanner.currentPositionInWeek()
+                let datesInAWeek = dayplanner.datesInAWeek(from: dateAux)
+                dayplanner.setCurrentDate(to: datesInAWeek[position])
             }
             // print("change of date in \(dateAux) \(viewPosition)")
-            Spacer()
         }
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
+  
 struct CreateButton: View {
     @State private var isPresented = true
     var body: some View {
@@ -188,5 +188,11 @@ struct CreateButton: View {
         .sheet(isPresented: $isPresented) {
             CreateView()
         }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

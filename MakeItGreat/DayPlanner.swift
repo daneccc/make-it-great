@@ -24,10 +24,16 @@ class DayPlanner: ObservableObject {
     func datesInAWeek(from date: Date) -> [Date] {
         calendarModel.datesInAWeek(from: date)
     }
-    func startDayOfWeek(from date: Date) -> Date {
+    func startDateOfWeek(from date: Date) -> Date {
         calendarModel.startDateOfWeek(from: date)
     }
     func isCurrent(_ date: Date) -> Bool {
         return date == currentDate
+    }
+    func currentPositionInWeek() -> Int {
+        let startOfWeek = startDateOfWeek(from: currentDate)
+        let datesInAWeek = datesInAWeek(from: startOfWeek)
+        let position = datesInAWeek.firstIndex(of: currentDate)!
+        return position
     }
 }
