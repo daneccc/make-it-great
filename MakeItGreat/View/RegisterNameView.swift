@@ -24,18 +24,17 @@ struct RegisterNameView: View {
                             Text("D").foregroundColor(Theme.action)
                             +           Text("a").foregroundColor(Theme.secondary)
                             +           Text("y").foregroundColor(Theme.tertiary)
-                            
+                            +           Text(".").foregroundColor(Theme.action)
                         )
                         .font(.system(size: 45.0, weight: .heavy, design: .rounded))
                         .tracking(2)
                         .padding(.bottom)
                         Text(":)")
                             .font(.system(size: 45.0, weight: .heavy, design: .rounded))
-                            .foregroundColor(Theme.font)
+                            .foregroundColor(Theme.action)
                             .tracking(2)
                             .padding(.bottom)
                             .rotationEffect(Angle(degrees: 110))
-                        
                     }
                     Spacer()
                     VStack {
