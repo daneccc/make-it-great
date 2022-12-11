@@ -47,6 +47,7 @@ struct MainSplitView: View {
             }
         })
         .onAppear {
+            UserDefaults.standard.set(true, forKey: "didLaunchBefore")
             selectedOptionID = optionsVM.options.first?.id
         }
     }

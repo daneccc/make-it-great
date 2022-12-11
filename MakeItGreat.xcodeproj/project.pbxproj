@@ -38,7 +38,6 @@
 		EECE024829407DD700F41460 /* AfternoonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE024729407DD700F41460 /* AfternoonGridView.swift */; };
 		EECE024A29407EA600F41460 /* NightGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE024929407EA600F41460 /* NightGridView.swift */; };
 		EEF18C4F2945FF0F00DF2C21 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF18C4E2945FF0F00DF2C21 /* OnboardingView.swift */; };
-		EEF18C512946084D00DF2C21 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF18C502946084D00DF2C21 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +92,6 @@
 		EECE024729407DD700F41460 /* AfternoonGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfternoonGridView.swift; sourceTree = "<group>"; };
 		EECE024929407EA600F41460 /* NightGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightGridView.swift; sourceTree = "<group>"; };
 		EEF18C4E2945FF0F00DF2C21 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		EEF18C502946084D00DF2C21 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +234,6 @@
 				EECE024929407EA600F41460 /* NightGridView.swift */,
 				D4391902294247E7006FC895 /* HomeScreenView.swift */,
 				EEF18C4E2945FF0F00DF2C21 /* OnboardingView.swift */,
-				EEF18C502946084D00DF2C21 /* BackgroundView.swift */,
 				356B5E3529464C79005EE3DA /* CalendarView.swift */,
 				356B5E3729464CE0005EE3DA /* CreateNewTaskView.swift */,
 			);
@@ -408,7 +405,6 @@
 				D439190129424527006FC895 /* Activities.xcdatamodeld in Sources */,
 				EECE02382938E63400F41460 /* OptionsModel.swift in Sources */,
 				356B5E3829464CE0005EE3DA /* CreateNewTaskView.swift in Sources */,
-				EEF18C512946084D00DF2C21 /* BackgroundView.swift in Sources */,
 				EECE02462940767100F41460 /* ActivityGridViewModel.swift in Sources */,
 				D43919052944079B006FC895 /* ActivityListViewModel.swift in Sources */,
 				356B5E3629464C79005EE3DA /* CalendarView.swift in Sources */,
