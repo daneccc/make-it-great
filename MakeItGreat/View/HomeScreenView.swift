@@ -34,7 +34,6 @@ struct HomeScreenView: View {
                     .foregroundColor(Theme.tertiary)
                     .tracking(2)
                     .padding(.bottom)
-                
             }
             Text("O que você prefere fazer agora?")
                 .font(.system(size: 32.0, weight: .heavy, design: .rounded))

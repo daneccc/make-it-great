@@ -27,8 +27,8 @@ struct MainSplitView: View {
                     HomeScreenView()
                 case "Settings":
                     SettingsView(flag: $flag)
-                case "Statistics":
-                    StatisticView()
+                case "History":
+                    RegisterNameView()
                 default:
                     ContentView()
                 }
