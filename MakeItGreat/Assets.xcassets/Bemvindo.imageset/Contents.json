@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "- HiFi.png",
+      "filename" : "Group 5.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "- HiFi 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "- HiFi 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

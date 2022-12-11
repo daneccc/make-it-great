@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct SettingsView: View {
-
     @Binding var flag: Bool
-    @Environment(\.dismiss) private var dismiss
+    @Binding var origin: Bool
 
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         NavigationStack {
             VStack {
@@ -13,9 +13,8 @@ struct SettingsView: View {
                     .frame(width: 169, height: 169)
                     .clipShape(Circle())
                     .padding(27)
-
                 NavigationLink {
-                    MorningGridView(flag: $flag)
+                    MorningGridView(flag: $flag, origin: $origin)
                 } label: {
                     ZStack {
                         Text("Editar Atividades")
@@ -24,12 +23,12 @@ struct SettingsView: View {
                             .bold()
                             .contentShape(Rectangle())
                             .frame(width: 613, height: 64)
-                            .background(Color("secondColor"))
+                            .background(Theme.action)
                             .cornerRadius(12)
                     }
                 }
-                .padding(10)
-
+                .padding(20)
+                .accentColor(Theme.action)
                 NavigationLink {
                     NewActivityView(flag: $flag)
                 } label: {
@@ -40,12 +39,12 @@ struct SettingsView: View {
                             .bold()
                             .contentShape(Rectangle())
                             .frame(width: 613, height: 64)
-                            .background(Color("secondColor"))
+                            .background(Theme.action)
                             .cornerRadius(12)
                     }
                 }
-                .padding(10)
-
+                .padding(20)
+                .accentColor(Theme.action)
                 NavigationLink {
                     PerfilEditView(flag: $flag)
                 } label: {
@@ -56,12 +55,12 @@ struct SettingsView: View {
                             .bold()
                             .contentShape(Rectangle())
                             .frame(width: 613, height: 64)
-                            .background(Color("secondColor"))
+                            .background(Theme.action)
                             .cornerRadius(12)
                     }
                 }
-                .padding(10)
-
+                .padding(20)
+                .accentColor(Theme.action)
                 Spacer()
             }
         }

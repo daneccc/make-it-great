@@ -5,6 +5,9 @@ struct MainSplitView: View {
     @State private var selectedOptionID: OptionsModel.ID?
     private var optionsVM = OptionsViewModel()
     @State var flag: Bool = true
+    @State var origin: Bool = true
+
+    @State var presentOnboarding = true
 
     var body: some View {
         NavigationSplitView {
@@ -17,31 +20,26 @@ struct MainSplitView: View {
                     Text("\(option.name)")
                         .font(.system(.title3, design: .rounded))
                         .bold()
-                        .foregroundColor(Color("secondColor"))
                 }
             }
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Person Name")
-                        .foregroundColor(Color("fourthColor"))
-                        .font(.system(size: 28))
-                        .bold()
-                }
-            }
+            .navigationBarBackButtonHidden()
+            .navigationTitle("MonDay")
         } detail: {
             if let selectedOptionID, let board = optionsVM.options.filter({ $0.id == selectedOptionID }) {
                 switch board.first?.name {
                 case "Board":
-                    ContentView()
+                    HomeScreenView()
                 case "Settings":
-                    SettingsView(flag: $flag)
-                case "Statistics":
+                    SettingsView(flag: $flag, origin: $origin)
+                case "History":
                     StatisticView()
                 default:
-                    ContentView()
+                    HomeScreenView()
                 }
             }
         }
+        .navigationBarBackButtonHidden()
+        .accentColor(Theme.action)
         .onChange(of: selectedOptionID, perform: { _ in
             let board = optionsVM.options.filter({ $0.id == selectedOptionID })
             if board.first?.name != "Settings" {
