@@ -3,8 +3,8 @@ import SwiftUI
 struct PerfilEditView: View {
 
     @Environment(\.dismiss) private var dismiss
-    @State private var name: String = ""
-    @State private var age: Int = 0
+    @State private var nameUser: String = ""
+    @State private var ageUser: Int = 0
     @Binding var flag: Bool
 
     var body: some View {
@@ -23,19 +23,25 @@ struct PerfilEditView: View {
                         .padding(.bottom, 40)
                 }
                 VStack {
-                    TextField("", text: $name)
+                    TextField("", text: $nameUser)
                         .frame(width: 662, height: 53)
                         .background(Color(cgColor: UIColor(red: 0.817, green: 0.817, blue: 0.817, alpha: 0.24).cgColor))
                         .cornerRadius(10)
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 40)
-                    TextField("", value: $age, formatter: NumberFormatter())
+                        .onChange(of: nameUser) { newValue in
+                            UserDefaults.standard.setChildName(value: nameUser)
+                        }
+                    TextField("", value: $ageUser, formatter: NumberFormatter())
                         .frame(width: 662, height: 53)
                         .background(Color(cgColor: UIColor(red: 0.817, green: 0.817, blue: 0.817, alpha: 0.24).cgColor))
                         .cornerRadius(10)
                         .multilineTextAlignment(.center)
                         .keyboardType(.decimalPad)
                         .padding(.bottom, 40)
+                        .onChange(of: ageUser) { newValue in
+                            UserDefaults.standard.setChildAge(value: ageUser)
+                        }
                 }
             }
             .padding(.top, 40)
@@ -62,7 +68,7 @@ struct PerfilEditView: View {
                         .foregroundColor(Theme.action)
                         .tracking(2)
                 }
-                .disabled(name.isEmpty || age <= 0)
+                .disabled(nameUser.isEmpty || ageUser <= 0)
             }
             ToolbarItem(placement: .principal) {
                 Text("Editar Perfil")

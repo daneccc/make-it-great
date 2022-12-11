@@ -18,10 +18,10 @@ extension UserDefaults {
     func getChildName() -> String? {
         return string(forKey: UserDefaultsKeys.nameUser.rawValue)
     }
-    func setChildAge(value: String) {
+    func setChildAge(value: Int) {
         set(value, forKey: UserDefaultsKeys.ageUser.rawValue)
-    }    
-    func getChildAge() -> String? {
-        return string(forKey: UserDefaultsKeys.ageUser.rawValue)
+    }
+    func getChildAge() -> Int? {
+        return integer(forKey: UserDefaultsKeys.ageUser.rawValue)
     }
 }

@@ -20,7 +20,7 @@ class ViewRouter: ObservableObject {
             } else if UserDefaults.standard.getChildAge() == nil {
                 currentPage = "RegisterNameView"
             } else if UserDefaults.standard.bool(forKey: "didLaunchBefore") {
-                currentPage = "HomeScreenView"
+                currentPage = "MainSplitView"
             }
         }
     }

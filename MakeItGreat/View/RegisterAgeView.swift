@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct RegisterAgeView: View {
-    @State var textFieldText: String = ""
-    @State private var age: String = ""
     @Environment(\.dismiss) private var dismiss
+    @State private var ageUser: Int = 0
     @Binding var flag: Bool
     var body: some View {
         NavigationStack {
@@ -19,14 +18,14 @@ struct RegisterAgeView: View {
                     Spacer()
                     HStack {
                         (
-                            Text("Bem-vindo ao ").foregroundColor(Theme.font) +           Text("M").foregroundColor(Theme.action)
-                            +           Text("o").foregroundColor(Theme.secondary)
-                            +           Text("n").foregroundColor(Theme.tertiary)
-                            +
-                            Text("D").foregroundColor(Theme.action)
-                            +           Text("a").foregroundColor(Theme.secondary)
-                            +           Text("y").foregroundColor(Theme.tertiary)
-                            +           Text(".").foregroundColor(Theme.action)
+                            Text("Bem-vindo ao ").foregroundColor(Theme.font) +
+                            Text("M").foregroundColor(Theme.action) +
+                            Text("o").foregroundColor(Theme.secondary) +
+                            Text("n").foregroundColor(Theme.tertiary) +
+                            Text("D").foregroundColor(Theme.action) +
+                            Text("a").foregroundColor(Theme.secondary) +
+                            Text("y").foregroundColor(Theme.tertiary) +
+                            Text(".").foregroundColor(Theme.action)
                         )
                         .font(.system(size: 45.0, weight: .heavy, design: .rounded))
                         .tracking(2)
@@ -37,7 +36,6 @@ struct RegisterAgeView: View {
                             .tracking(2)
                             .padding(.bottom)
                             .rotationEffect(Angle(degrees: 110))
-                        
                     }
                     Spacer()
                     VStack {
@@ -46,12 +44,15 @@ struct RegisterAgeView: View {
                             .foregroundColor(Theme.font)
                             .tracking(2)
                             .padding(.bottom, 30)
-                        TextField("", text: $age)
+                        TextField("", value: $ageUser, format: .number)
                             .frame(width: 662, height: 80)
                             .background(Color(cgColor: UIColor(red: 0.817, green: 0.817, blue: 0.817, alpha: 0.24).cgColor))
                             .cornerRadius(10)
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 40)
+                            .onChange(of: ageUser) { _ in
+                                UserDefaults.standard.setChildAge(value: ageUser)
+                            }
                     }
                     Spacer()
                     Spacer()
@@ -79,7 +80,7 @@ struct RegisterAgeView: View {
                         .foregroundColor(Theme.action)
                         .tracking(2)
                 }
-                .disabled(age.isEmpty)
+                .disabled(ageUser <= 0)
             }
         }
         .onChange(of: flag) { _ in

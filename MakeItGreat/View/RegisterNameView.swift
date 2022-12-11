@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterNameView: View {
     @State var textFieldText: String = ""
-    @State private var name: String = ""
+    @State private var nameUser: String = ""
     @State var flag = false
     var body: some View {
         NavigationStack {
@@ -44,12 +44,15 @@ struct RegisterNameView: View {
                             .foregroundColor(Theme.font)
                             .tracking(2)
                             .padding(.bottom, 30)
-                        TextField("", text: $name)
+                        TextField("", text: $nameUser)
                             .frame(width: 662, height: 80)
                             .background(Color(cgColor: UIColor(red: 0.817, green: 0.817, blue: 0.817, alpha: 0.24).cgColor))
                             .cornerRadius(10)
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 40)
+                            .onChange(of: nameUser) { newValue in
+                                UserDefaults.standard.setChildName(value: nameUser)
+                            }
                     }
                     Spacer()
                     Spacer()
@@ -64,7 +67,7 @@ struct RegisterNameView: View {
                                 .foregroundColor(Theme.action)
                                 .tracking(2)
                         }
-                        .disabled(name.isEmpty)
+                        .disabled(nameUser.isEmpty)
                     }
                 }
             }

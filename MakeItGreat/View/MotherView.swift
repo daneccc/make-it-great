@@ -13,8 +13,8 @@ struct MotherView: View {
         VStack {
             if viewRouter.currentPage == "RegisterNameView" {
                 RegisterNameView()
-            } else if viewRouter.currentPage == "HomeScreenView" {
-                HomeScreenView()
+            } else if viewRouter.currentPage == "MainSplitView" {
+                MainSplitView()
             }
         }
     }
