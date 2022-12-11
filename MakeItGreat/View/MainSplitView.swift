@@ -1,11 +1,9 @@
 import SwiftUI
 
 struct MainSplitView: View {
-
     @State private var selectedOptionID: OptionsModel.ID?
     private var optionsVM = OptionsViewModel()
     @State var flag: Bool = true
-
     var body: some View {
         NavigationSplitView {
             List(optionsVM.options, selection: $selectedOptionID) { option in
@@ -19,7 +17,7 @@ struct MainSplitView: View {
                         .bold()
                 }
             }
-            .navigationTitle("MonDay")
+            .navigationTitle(Text("\(UserDefaults.standard.getChildName() ?? "Unset")"))
         } detail: {
             if let selectedOptionID, let board = optionsVM.options.filter({ $0.id == selectedOptionID }) {
                 switch board.first?.name {
@@ -28,7 +26,7 @@ struct MainSplitView: View {
                 case "Settings":
                     SettingsView(flag: $flag)
                 case "History":
-                    StatisticView()
+                    CalendarView()
                 default:
                     HomeScreenView()
                 }
