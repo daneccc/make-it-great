@@ -31,7 +31,6 @@ struct ContentView: View {
                         .ignoresSafeArea()
                 }
             }
-                
             CreateButton()
         }
         .environmentObject(dayPlanner)
@@ -43,7 +42,8 @@ struct SwipeableStack<WhateverTypeOfData: Hashable, Content>: View where Content
     var whateverData: [WhateverTypeOfData] = []
     let content: (WhateverTypeOfData, ViewPosition) -> Content
     var jumpTo: WhateverTypeOfData?
-    init(_ data: [WhateverTypeOfData], jumpTo: WhateverTypeOfData? = nil, @ViewBuilder content: @escaping (WhateverTypeOfData, ViewPosition) -> Content) {
+    init(_ data: [WhateverTypeOfData], jumpTo: WhateverTypeOfData? = nil,
+         @ViewBuilder content: @escaping (WhateverTypeOfData, ViewPosition) -> Content) {
         self.whateverData = data
         self.content = content
         if let jumpTo {
@@ -134,7 +134,7 @@ struct WeekView: View {
         let datesInAWeek = dayplanner.datesInAWeek(from: date)
         HStack {
             Spacer()
-            ForEach(datesInAWeek.indices, id:\.self) { date in
+            ForEach(datesInAWeek.indices, id: \.self) { date in
                 let dateWeek = datesInAWeek[date]
                 VStack {
                     Text(week[date])
@@ -143,12 +143,11 @@ struct WeekView: View {
                         .fontWeight(.bold)
                         .foregroundColor(dayplanner.isCurrent(dateWeek) ? Color.white : Color.black)
                         .background(
-                            ZStack{
+                            ZStack {
                                 if dayplanner.isCurrent(dateWeek) {
                                     Circle()
                                         .fill(.blue)
                                         .frame(width: 40, height: 40)
-                                        
                                 }
                             })
                 }
@@ -168,13 +167,10 @@ struct WeekView: View {
         }
     }
 }
-  
 struct CreateButton: View {
     @State private var isPresented = false
     var body: some View {
-        Button(action: {
-            self.isPresented.toggle()
-        }) {
+        Button(action: {self.isPresented.toggle()}) {
             ZStack {
                 Circle()
                     .frame(width: 50, height: 50)

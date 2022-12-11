@@ -9,6 +9,7 @@ import Foundation
 
 class DayPlanner: ObservableObject {
     @Published private var calendarModel = CalendarModel()
+    @Published var taskDescription: String = ""
     var currentDate: Date {
         return calendarModel.currentDate
     }
