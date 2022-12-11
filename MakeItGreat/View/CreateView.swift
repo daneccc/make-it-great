@@ -14,6 +14,7 @@ struct CreateView: View {
                 .padding()
             Divider()
             WhatView()
+                .padding()
             Spacer()
         }
     }
@@ -24,7 +25,7 @@ struct HeaderView: View {
 
     var body: some View {
         HStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Nova atividade")
             Spacer()
             Image(systemName: "xmark")
                 .onTapGesture {
@@ -37,9 +38,37 @@ struct HeaderView: View {
 }
 
 struct WhatView: View {
+    @State private var activity: String = ""
     var body: some View {
-        Text("What?")
-            .font(.title)
+        VStack(alignment: .leading) {
+            Text("O que você planeja fazer?")
+                .font(.title)
+            HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: CGFloat(10))
+                        .frame(width: 50, height: 50)
+                    Image(systemName: "pencil")
+                        .foregroundColor(.white)
+                        .imageScale(.large)
+                }
+                VStack {
+                    TextField("Descrição da atividade", text: $activity)
+                        .font(.title2)
+                    Divider()
+                }
+                .padding(.leading)
+            }
+            Spacer()
+            Button(action: {}) {
+                Text("Continue")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .font(.title)
+                    .fontWeight(.bold)
+            }
+            .buttonStyle(.bordered)
+        }
+        
     }
 }
 

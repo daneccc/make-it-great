@@ -26,8 +26,8 @@ struct ContentView: View {
                 }
                 .frame(maxHeight: 100)
                 SwipeableStack([1, 2, 3], jumpTo: 2) { (_, _) in
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color.yellow)
+                    RoundedRectangle(cornerRadius: 23)
+                        .fill(Color.gray)
                         .ignoresSafeArea()
                 }
             }
@@ -170,7 +170,7 @@ struct WeekView: View {
 }
   
 struct CreateButton: View {
-    @State private var isPresented = true
+    @State private var isPresented = false
     var body: some View {
         Button(action: {
             self.isPresented.toggle()
