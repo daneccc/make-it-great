@@ -59,7 +59,10 @@ struct NightGridView: View {
                             ForEach($activityGridVM2.activities, id: \.id) { $activity in
                                 ZStack {
                                     Rectangle()
-                                        .foregroundColor(activity.completed ? Theme.secondary : Theme.action)                                        .frame(width: 191, height: 174)
+                                        .foregroundColor(
+                                            activity.completed ? Theme.secondary : Theme.action
+                                        )
+                                        .frame(width: 191, height: 174)
                                         .cornerRadius(39)
                                         .onTapGesture {
                                             activity.completed.toggle()

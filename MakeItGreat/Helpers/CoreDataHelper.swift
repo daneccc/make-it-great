@@ -1,10 +1,3 @@
-//
-//  CoreDataHelper.swift
-//  MakeItGreat
-//
-//  Created by Ayslana Riene on 28/11/22.
-//
-
 import Foundation
 import CoreData
 
@@ -43,7 +36,7 @@ class CoreDataHelper {
     }
     private init() {
         persistentContainer = NSPersistentContainer(name: "Activities")
-        persistentContainer.loadPersistentStores { (description, error) in
+        persistentContainer.loadPersistentStores { (_, error) in
             if let error = error {
                 fatalError("Unable to initialize Core Data Stack \(error)")
             }

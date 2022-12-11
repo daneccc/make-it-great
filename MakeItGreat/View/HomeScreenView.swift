@@ -1,10 +1,3 @@
-//
-//  HomeScreen.swift
-//  MakeItGreat
-//
-//  Created by Ayslana Riene on 08/12/22.
-//
-
 import SwiftUI
 
 struct GrowingButton: ButtonStyle {
