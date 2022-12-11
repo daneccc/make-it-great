@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAAA6713294566A400947B46 /* AgeRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA6712294566A400947B46 /* AgeRegister.swift */; };
 		EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */; };
 		EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F96292FAA9D00AFE6C0 /* ContentView.swift */; };
 		EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAAA6712294566A400947B46 /* AgeRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRegister.swift; sourceTree = "<group>"; };
 		EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatApp.swift; sourceTree = "<group>"; };
 		EE767F96292FAA9D00AFE6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				EE767F96292FAA9D00AFE6C0 /* ContentView.swift */,
+				AAAA6712294566A400947B46 /* AgeRegister.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAA6713294566A400947B46 /* AgeRegister.swift in Sources */,
 				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
 				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
 			);
