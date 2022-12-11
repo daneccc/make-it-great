@@ -32,7 +32,7 @@ struct MainSplitView: View {
                 case "Settings":
                     SettingsView(flag: $flag, origin: $origin)
                 case "History":
-                    StatisticView()
+                    CalendarView()
                 default:
                     HomeScreenView()
                 }

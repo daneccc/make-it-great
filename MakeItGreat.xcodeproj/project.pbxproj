@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356B5E3629464C79005EE3DA /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B5E3529464C79005EE3DA /* CalendarView.swift */; };
+		356B5E3829464CE0005EE3DA /* CreateNewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B5E3729464CE0005EE3DA /* CreateNewTaskView.swift */; };
+		356B5E3A29464D15005EE3DA /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B5E3929464D15005EE3DA /* CalendarModel.swift */; };
+		356B5E3C29464D27005EE3DA /* PlannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B5E3B29464D27005EE3DA /* PlannerModel.swift */; };
+		356B5E3F29464DA6005EE3DA /* PlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B5E3E29464DA6005EE3DA /* PlannerViewModel.swift */; };
 		D43918FB294214A9006FC895 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43918F8294214A9006FC895 /* CoreDataHelper.swift */; };
 		D43918FC294214A9006FC895 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43918F9294214A9006FC895 /* Theme.swift */; };
 		D43918FD294214A9006FC895 /* DataHelper.json in Resources */ = {isa = PBXBuildFile; fileRef = D43918FA294214A9006FC895 /* DataHelper.json */; };
@@ -54,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		356B5E3529464C79005EE3DA /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		356B5E3729464CE0005EE3DA /* CreateNewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewTaskView.swift; sourceTree = "<group>"; };
+		356B5E3929464D15005EE3DA /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarModel.swift; path = MakeItGreat/View/CalendarModel.swift; sourceTree = SOURCE_ROOT; };
+		356B5E3B29464D27005EE3DA /* PlannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlannerModel.swift; path = MakeItGreat/View/PlannerModel.swift; sourceTree = SOURCE_ROOT; };
+		356B5E3E29464DA6005EE3DA /* PlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerViewModel.swift; sourceTree = "<group>"; };
 		D43918F8294214A9006FC895 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		D43918F9294214A9006FC895 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D43918FA294214A9006FC895 /* DataHelper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataHelper.json; sourceTree = "<group>"; };
@@ -196,6 +206,7 @@
 				D43919042944079B006FC895 /* ActivityListViewModel.swift */,
 				EECE02392938E6DE00F41460 /* OptionsViewModel.swift */,
 				EECE02452940767100F41460 /* ActivityGridViewModel.swift */,
+				356B5E3E29464DA6005EE3DA /* PlannerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,6 +216,8 @@
 			children = (
 				EECE02372938E63400F41460 /* OptionsModel.swift */,
 				EECE02432940761900F41460 /* ActivityGridModel.swift */,
+				356B5E3929464D15005EE3DA /* CalendarModel.swift */,
+				356B5E3B29464D27005EE3DA /* PlannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +237,8 @@
 				D4391902294247E7006FC895 /* HomeScreenView.swift */,
 				EEF18C4E2945FF0F00DF2C21 /* OnboardingView.swift */,
 				EEF18C502946084D00DF2C21 /* BackgroundView.swift */,
+				356B5E3529464C79005EE3DA /* CalendarView.swift */,
+				356B5E3729464CE0005EE3DA /* CreateNewTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -389,14 +404,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D43918FB294214A9006FC895 /* CoreDataHelper.swift in Sources */,
+				356B5E3A29464D15005EE3DA /* CalendarModel.swift in Sources */,
 				D439190129424527006FC895 /* Activities.xcdatamodeld in Sources */,
 				EECE02382938E63400F41460 /* OptionsModel.swift in Sources */,
+				356B5E3829464CE0005EE3DA /* CreateNewTaskView.swift in Sources */,
 				EEF18C512946084D00DF2C21 /* BackgroundView.swift in Sources */,
 				EECE02462940767100F41460 /* ActivityGridViewModel.swift in Sources */,
 				D43919052944079B006FC895 /* ActivityListViewModel.swift in Sources */,
+				356B5E3629464C79005EE3DA /* CalendarView.swift in Sources */,
 				EECE023E29406B7600F41460 /* StatisticView.swift in Sources */,
 				EECE023A2938E6DE00F41460 /* OptionsViewModel.swift in Sources */,
 				EECE02342938D0EF00F41460 /* SettingsView.swift in Sources */,
+				356B5E3C29464D27005EE3DA /* PlannerModel.swift in Sources */,
 				EECE024A29407EA600F41460 /* NightGridView.swift in Sources */,
 				EECE024029406E1200F41460 /* NewActivityView.swift in Sources */,
 				EECE023C29405EFA00F41460 /* PerfilEditView.swift in Sources */,
@@ -407,6 +426,7 @@
 				EECE024829407DD700F41460 /* AfternoonGridView.swift in Sources */,
 				D4391903294247E7006FC895 /* HomeScreenView.swift in Sources */,
 				EECE02362938E61400F41460 /* MainSplitView.swift in Sources */,
+				356B5E3F29464DA6005EE3DA /* PlannerViewModel.swift in Sources */,
 				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
 				EECE02422940730D00F41460 /* MorningGridView.swift in Sources */,
 			);
