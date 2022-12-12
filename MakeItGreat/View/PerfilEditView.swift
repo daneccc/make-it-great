@@ -60,8 +60,8 @@ struct PerfilEditView: View {
                 }
             }
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    // executar função para salvar novos dados usando Name e Age
+                NavigationLink {
+                    MainSplitView().navigationBarHidden(true)
                 } label: {
                     Text("Salvar")
                         .font(.system(size: 26, weight: .heavy, design: .rounded))

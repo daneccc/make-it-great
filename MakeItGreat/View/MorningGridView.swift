@@ -5,6 +5,7 @@ struct MorningGridView: View {
     let columns = Array(repeating: GridItem(.flexible(minimum: 20), spacing: 0), count: 3)
     @ObservedObject var activityGridVM1 = ActivityGridViewModel()
     @ObservedObject var activityGridVM2 = ActivityGridViewModel()
+    @StateObject private var activityListVM = ActivityListViewModel()
     @State var categories: [String] = ["Higiene", "Organização", "Alimentação", "Diversão", "Aprendizado"]
     @Binding var flag: Bool
     var body: some View {
@@ -46,8 +47,9 @@ struct MorningGridView: View {
                                                 }
                                                 .overlay(                                    Text("\(activity.name)")
                                                     .font(.system(size: 32.0, weight: .heavy, design: .rounded))
-                                                    .foregroundColor(Theme.secondary)
-                                                    .tracking(2)
+                                                    .foregroundColor(
+                                                        activity.completed ? Theme.action : Theme.secondary
+                                                    )                                                    .tracking(2)
                                                     .multilineTextAlignment(.center)
                                                 )
                                             if activity.completed {
@@ -55,6 +57,8 @@ struct MorningGridView: View {
                                                     .foregroundColor(.black)
                                                     .font(.system(size: 48))
                                                     .bold()
+                                                    .padding(.leading, 125)
+                                                    .padding(.bottom, 105)
                                             }
                                         }
                                     }
@@ -80,16 +84,33 @@ struct MorningGridView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
                     AfternoonGridView(flag: $flag)
-                } label: {
-                    Text("Próximo")
-                        .font(.system(size: 26, weight: .heavy, design: .rounded))
-                        .foregroundColor(Theme.action)
-                        .tracking(2)
                 }
+            label: {
+                Text("Próximo")
+                    .font(.system(size: 26, weight: .heavy, design: .rounded))
+                    .foregroundColor(Theme.action)
+                    .tracking(2)
+            }.simultaneousGesture(TapGesture().onEnded{
+                saveToCoreData()
+            })
             }
         }
         .onChange(of: flag) { _ in
             dismiss()
+        }
+    }
+    func saveToCoreData() {
+        for activity in activityGridVM2.activities {
+            if activity.completed {
+                print(activity)
+                let activityLocal = Activity(context: CoreDataHelper.shared.viewContext)
+                activityLocal.name = activity.name
+                activityLocal.doingAt = activity.doingAt
+                activityLocal.category = activity.category
+                activityLocal.finishHour = activity.finishHour
+                activityLocal.startHour = activity.startHour
+                CoreDataHelper.shared.save()
+            }
         }
     }
 }

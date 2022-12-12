@@ -6,7 +6,6 @@ struct ActivityGridModel: Identifiable {
     var name: String = ""
     var category: String = ""
     var doingAt: String = ""
-    var illustration: String = ""
     var startHour: String = ""
     var finishHour: String = ""
 }

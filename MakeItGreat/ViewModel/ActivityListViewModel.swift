@@ -8,9 +8,9 @@ class ActivityListViewModel: ObservableObject {
     var finishHour: String = ""
     var startHour: String = ""
 
-    @Published var activitys: [ActivityViewModel] = []
-    func getAllActivitys() {
-        activitys = CoreDataHelper.shared.getAllActivitys().map(ActivityViewModel.init)
+    @Published var activities: [ActivityViewModel] = []
+    func getAllActivities() {
+        activities = CoreDataHelper.shared.getAllActivities().map(ActivityViewModel.init)
     }
     func delete(_ activity: ActivityViewModel) {
         let existingActivity = CoreDataHelper.shared.getActivityById(id: activity.id)
@@ -35,13 +35,13 @@ struct ActivityViewModel {
         return activity.objectID
     }
     var name: String {
-        return activity.name ?? ""
+        return activity.name!
     }
     var doingAt: String {
-        return activity.doingAt ?? ""
+        return activity.doingAt!
     }
     var category: String {
-        return activity.category ?? ""
+        return activity.category!
     }
     var startHour: String {
         return activity.startHour ?? ""

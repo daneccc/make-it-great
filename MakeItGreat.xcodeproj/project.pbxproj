@@ -27,7 +27,6 @@
 		D4DEF9B42946898B003EDD71 /* PlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9B32946898B003EDD71 /* PlannerViewModel.swift */; };
 		D4DEF9B6294689CE003EDD71 /* PlannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */; };
 		EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */; };
-		EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F96292FAA9D00AFE6C0 /* ContentView.swift */; };
 		EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */; };
 		EE767F9C292FAA9F00AFE6C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F9B292FAA9F00AFE6C0 /* Preview Assets.xcassets */; };
 		EE767FA6292FAA9F00AFE6C0 /* MakeItGreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FA5292FAA9F00AFE6C0 /* MakeItGreatTests.swift */; };
@@ -38,7 +37,6 @@
 		EECE02382938E63400F41460 /* OptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02372938E63400F41460 /* OptionsModel.swift */; };
 		EECE023A2938E6DE00F41460 /* OptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02392938E6DE00F41460 /* OptionsViewModel.swift */; };
 		EECE023C29405EFA00F41460 /* PerfilEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE023B29405EFA00F41460 /* PerfilEditView.swift */; };
-		EECE023E29406B7600F41460 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE023D29406B7600F41460 /* StatisticView.swift */; };
 		EECE024029406E1200F41460 /* NewActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE023F29406E1200F41460 /* NewActivityView.swift */; };
 		EECE02422940730D00F41460 /* MorningGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02412940730D00F41460 /* MorningGridView.swift */; };
 		EECE02442940761900F41460 /* ActivityGridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02432940761900F41460 /* ActivityGridModel.swift */; };
@@ -86,7 +84,6 @@
 		D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlannerModel.swift; path = MakeItGreat/ViewModel/PlannerModel.swift; sourceTree = SOURCE_ROOT; };
 		EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatApp.swift; sourceTree = "<group>"; };
-		EE767F96292FAA9D00AFE6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE767F9B292FAA9F00AFE6C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE767FA1292FAA9F00AFE6C0 /* MakeItGreatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +96,6 @@
 		EECE02372938E63400F41460 /* OptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OptionsModel.swift; path = MakeItGreat/View/OptionsModel.swift; sourceTree = SOURCE_ROOT; };
 		EECE02392938E6DE00F41460 /* OptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OptionsViewModel.swift; path = MakeItGreat/View/OptionsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EECE023B29405EFA00F41460 /* PerfilEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilEditView.swift; sourceTree = "<group>"; };
-		EECE023D29406B7600F41460 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		EECE023F29406E1200F41460 /* NewActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityView.swift; sourceTree = "<group>"; };
 		EECE02412940730D00F41460 /* MorningGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningGridView.swift; sourceTree = "<group>"; };
 		EECE02432940761900F41460 /* ActivityGridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityGridModel.swift; path = MakeItGreat/View/ActivityGridModel.swift; sourceTree = SOURCE_ROOT; };
@@ -238,10 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				EECE02352938E61400F41460 /* MainSplitView.swift */,
-				EE767F96292FAA9D00AFE6C0 /* ContentView.swift */,
 				EECE02332938D0EF00F41460 /* SettingsView.swift */,
 				EECE023B29405EFA00F41460 /* PerfilEditView.swift */,
-				EECE023D29406B7600F41460 /* StatisticView.swift */,
 				EECE023F29406E1200F41460 /* NewActivityView.swift */,
 				EECE02412940730D00F41460 /* MorningGridView.swift */,
 				EECE024729407DD700F41460 /* AfternoonGridView.swift */,
@@ -432,7 +426,6 @@
 				D4DEF9A229460CAD003EDD71 /* RegisterNightView.swift in Sources */,
 				D4DEF9AE2946890F003EDD71 /* CalendarView.swift in Sources */,
 				D43919052944079B006FC895 /* ActivityListViewModel.swift in Sources */,
-				EECE023E29406B7600F41460 /* StatisticView.swift in Sources */,
 				EECE023A2938E6DE00F41460 /* OptionsViewModel.swift in Sources */,
 				EECE02342938D0EF00F41460 /* SettingsView.swift in Sources */,
 				D4DEF9B6294689CE003EDD71 /* PlannerModel.swift in Sources */,
@@ -446,7 +439,6 @@
 				EECE023C29405EFA00F41460 /* PerfilEditView.swift in Sources */,
 				D43918FC294214A9006FC895 /* Theme.swift in Sources */,
 				EECE02442940761900F41460 /* ActivityGridModel.swift in Sources */,
-				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
 				EECE024829407DD700F41460 /* AfternoonGridView.swift in Sources */,
 				D4DEF9AA29464BF0003EDD71 /* ViewRouterController.swift in Sources */,
 				D4391903294247E7006FC895 /* HomeScreenView.swift in Sources */,

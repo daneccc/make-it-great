@@ -27,22 +27,22 @@ struct SettingsView: View {
                 }
                 .padding(20)
                 .accentColor(Theme.action)
-                NavigationLink {
-                    NewActivityView(flag: $flag)
-                } label: {
-                    ZStack {
-                        Text("Cadastrar Nova Atividade")
-                            .font(.system(size: 28))
-                            .foregroundColor(.white)
-                            .bold()
-                            .contentShape(Rectangle())
-                            .frame(width: 613, height: 64)
-                            .background(Theme.action)
-                            .cornerRadius(12)
-                    }
-                }
-                .padding(20)
-                .accentColor(Theme.action)
+//                NavigationLink {
+//                    NewActivityView(flag: $flag)
+//                } label: {
+//                    ZStack {
+//                        Text("Cadastrar Nova Atividade")
+//                            .font(.system(size: 28))
+//                            .foregroundColor(.white)
+//                            .bold()
+//                            .contentShape(Rectangle())
+//                            .frame(width: 613, height: 64)
+//                            .background(Theme.action)
+//                            .cornerRadius(12)
+//                    }
+//                }
+//                .padding(20)
+//                .accentColor(Theme.action)
                 NavigationLink {
                     PerfilEditView(flag: $flag)
                 } label: {

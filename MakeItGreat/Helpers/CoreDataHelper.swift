@@ -18,7 +18,7 @@ class CoreDataHelper {
         viewContext.delete(activity)
         save()
     }
-    func getAllActivitys() -> [Activity] {
+    func getAllActivities() -> [Activity] {
         let request: NSFetchRequest<Activity> = Activity.fetchRequest()
         do {
             return try viewContext.fetch(request)
@@ -34,26 +34,22 @@ class CoreDataHelper {
             print(error.localizedDescription)
         }
     }
-    
-    func saveActivities(_ activities: [Activity]) {
-        for activity in activities {
-            let newActivity = NSEntityDescription.insertNewObject(forEntityName: "Activity", into: viewContext)
-            newActivity.setValue(activity.id, forKey: "id")
-            newActivity.setValue(activity.name, forKey: "name")
-            newActivity.setValue(activity.category, forKey: "category")
-            newActivity.setValue(activity.doingAt, forKey: "doingAt")
-            newActivity.setValue(activity.illustration, forKey: "illustration")
-            newActivity.setValue(activity.finishHour, forKey: "finishHour")
-            newActivity.setValue(activity.startHour, forKey: "startHour")
-        }
-        do {
-            try viewContext.save()
-            print("Success")
-        } catch {
-            print("Error saving: \(error)")
-        }
-    }
-    
+//    func saveActivities(_ activities: [Activity]) {
+//        for activity in activities {
+//            let newActivity = NSEntityDescription.insertNewObject(forEntityName: "Activity", into: viewContext)
+//            newActivity.setValue(activity.name, forKey: "name")
+//            newActivity.setValue(activity.category, forKey: "category")
+//            newActivity.setValue(activity.doingAt, forKey: "doingAt")
+//            newActivity.setValue(activity.finishHour, forKey: "finishHour")
+//            newActivity.setValue(activity.startHour, forKey: "startHour")
+//        }
+//        do {
+//            try viewContext.save()
+//            print("Success")
+//        } catch {
+//            print("Error saving: \(error)")
+//        }
+//    }
     private init() {
         persistentContainer = NSPersistentContainer(name: "Activities")
         persistentContainer.loadPersistentStores { (_, error) in

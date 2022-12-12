@@ -25,8 +25,8 @@ struct MainSplitView: View {
                     HomeScreenView()
                 case "Settings":
                     SettingsView(flag: $flag)
-                case "History":
-                    CalendarView()
+//                case "History":
+//                    CalendarView()
                 default:
                     HomeScreenView()
                 }
