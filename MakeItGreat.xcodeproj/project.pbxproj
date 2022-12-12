@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		356B5E4329474104005EE3DA /* CreateNewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B5E4229474104005EE3DA /* CreateNewTaskView.swift */; };
 		D43918FB294214A9006FC895 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43918F8294214A9006FC895 /* CoreDataHelper.swift */; };
 		D43918FC294214A9006FC895 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43918F9294214A9006FC895 /* Theme.swift */; };
 		D43918FD294214A9006FC895 /* DataHelper.json in Resources */ = {isa = PBXBuildFile; fileRef = D43918FA294214A9006FC895 /* DataHelper.json */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		356B5E4229474104005EE3DA /* CreateNewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewTaskView.swift; sourceTree = "<group>"; };
 		D43918F8294214A9006FC895 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		D43918F9294214A9006FC895 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D43918FA294214A9006FC895 /* DataHelper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataHelper.json; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				D4DEF9A529460CC8003EDD71 /* RegisterAfternoonView.swift */,
 				D4DEF9AB29464E12003EDD71 /* MotherView.swift */,
 				D4DEF9AD2946890F003EDD71 /* CalendarView.swift */,
+				356B5E4229474104005EE3DA /* CreateNewTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				D4DEF9A829464A1C003EDD71 /* UserDefaultsController.swift in Sources */,
 				D4DEF9A029460C60003EDD71 /* RegisterMorningView.swift in Sources */,
 				D4DEF99C294503F4003EDD71 /* RegisterAgeView.swift in Sources */,
+				356B5E4329474104005EE3DA /* CreateNewTaskView.swift in Sources */,
 				EECE023C29405EFA00F41460 /* PerfilEditView.swift in Sources */,
 				D43918FC294214A9006FC895 /* Theme.swift in Sources */,
 				EECE02442940761900F41460 /* ActivityGridModel.swift in Sources */,
