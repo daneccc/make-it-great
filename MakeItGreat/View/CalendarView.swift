@@ -119,7 +119,7 @@ enum ViewPosition {
 struct WeekView: View {
     @EnvironmentObject var dayplanner: PlannerViewModel
     let date: Date
-    let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    let week = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
     var viewPosition = ViewPosition.centerView
     init(of date: Date, viewPosition: ViewPosition) {
         self.date = date
