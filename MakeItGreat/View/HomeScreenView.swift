@@ -34,7 +34,7 @@ struct HomeScreenView: View {
     @StateObject private var activityListVM = ActivityListViewModel()
     @State var randomName: String = ""
     @State var randomName2: String = ""
-    @State var doingActivity: Bool = true
+    @State var doingActivity: Bool = false
     var body: some View {
         if doingActivity == false {
             VStack {
