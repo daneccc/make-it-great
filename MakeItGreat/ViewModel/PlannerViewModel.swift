@@ -10,13 +10,14 @@ import Foundation
 class PlannerViewModel: ObservableObject {
     @Published private var taskModel = PlannerModel()
     @Published var taskDescription: String = ""
+    @Published var time: String = ""
     
     var tasks: [Task] {
         return taskModel.tasks
     }
     
     func createTask() {
-        taskModel.createTask(taskDescription)
+        taskModel.createTask(taskDescription, time)
     }
     
     // calendar model

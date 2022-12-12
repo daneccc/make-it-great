@@ -23,9 +23,9 @@ struct CalendarView: View {
                     WeekView(of: date, viewPosition: pos)
                 }
                 .frame(maxHeight: 100)
-                SwipeableStack([1, 2, 3], jumpTo: 2) { (_, _) in
-                    DayView()
-                }
+                //SwipeableStack([1, 2, 3], jumpTo: 2) { (_, _) in
+                DayView()
+                //}
             }
         }
         .environmentObject(dayPlanner)
@@ -189,12 +189,14 @@ struct DayView: View {
             RoundedRectangle(cornerRadius: 23)
                 .fill(Color.gray)
                 .ignoresSafeArea()
-            LazyVStack(spacing: 0) {
-                ForEach(dayplanner.tasks, id:\.self) { task in
-                    TaskView(for: task)
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(dayplanner.tasks, id:\.self) { task in
+                        TaskView(for: task)
+                    }
                 }
+                .padding()
             }
-            .padding()
         }
     }
 }
@@ -222,7 +224,8 @@ struct TaskView: View {
                     .frame(width: 5, height: 30)
             }
             VStack(alignment: .leading) {
-                Text("6:00")
+                //Text("6:00")
+                Text(task.time)
                 Text(task.taskDescription)
                     .font(.system(size: 24))
                     .fontWeight(.bold)
