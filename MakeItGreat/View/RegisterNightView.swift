@@ -1,6 +1,13 @@
+//
+//  RegisterNightView.swift
+//  MakeItGreat
+//
+//  Created by Ayslana Riene on 11/12/22.
+//
+
 import SwiftUI
 
-struct AfternoonGridView: View {
+struct RegisterNightView: View {
     @Environment(\.dismiss) private var dismiss
     let columns = Array(repeating: GridItem(.flexible(minimum: 20), spacing: 0), count: 3)
     @ObservedObject var activityGridVM1 = ActivityGridViewModel()
@@ -12,12 +19,12 @@ struct AfternoonGridView: View {
         NavigationStack {
             VStack {
                 HStack {
-                    Text("Editar as Atividades da")
+                    Text("Adicionar as Atividades da")
                         .font(.system(size: 38.0, weight: .heavy, design: .rounded))
                         .foregroundColor(Theme.font)
                         .tracking(2)
                         .padding(.bottom, 15)
-                    Text("Tarde")
+                    Text("Noite")
                         .font(.system(size: 38.0, weight: .heavy, design: .rounded))
                         .foregroundColor(Theme.tertiary)
                         .tracking(2)
@@ -34,7 +41,7 @@ struct AfternoonGridView: View {
                                 .padding(.bottom, 50)
                             LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
                                 ForEach($activityGridVM2.activities, id: \.id) { $activity in
-                                    if activity.category == category && activity.doingAt == "tarde"{
+                                    if activity.category == category && activity.doingAt == "noite"{
                                         ZStack(alignment: .center) {
                                             Rectangle()
                                                 .foregroundColor(
@@ -83,7 +90,7 @@ struct AfternoonGridView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-                    NightGridView(flag: $flag)
+                    MainSplitView().navigationBarHidden(true)
                 }
             label: {
                 Text("Próximo")

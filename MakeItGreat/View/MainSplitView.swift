@@ -1,11 +1,9 @@
 import SwiftUI
 
 struct MainSplitView: View {
-
     @State private var selectedOptionID: OptionsModel.ID?
     private var optionsVM = OptionsViewModel()
     @State var flag: Bool = true
-
     var body: some View {
         NavigationSplitView {
             List(optionsVM.options, selection: $selectedOptionID) { option in
@@ -19,21 +17,22 @@ struct MainSplitView: View {
                         .bold()
                 }
             }
-            .navigationTitle("Person Name")
+            .navigationTitle(Text("\(UserDefaults.standard.getChildName() ?? "Unset")"))
         } detail: {
             if let selectedOptionID, let board = optionsVM.options.filter({ $0.id == selectedOptionID }) {
                 switch board.first?.name {
                 case "Board":
-                    ContentView()
+                    HomeScreenView()
                 case "Settings":
                     SettingsView(flag: $flag)
-                case "Statistics":
-                    StatisticView()
+//                case "History":
+//                    CalendarView()
                 default:
-                    ContentView()
+                    HomeScreenView()
                 }
             }
         }
+        .accentColor(Theme.action)
         .onChange(of: selectedOptionID, perform: { _ in
             let board = optionsVM.options.filter({ $0.id == selectedOptionID })
             if board.first?.name != "Settings" {

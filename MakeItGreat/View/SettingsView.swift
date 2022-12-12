@@ -1,10 +1,8 @@
 import SwiftUI
 
 struct SettingsView: View {
-
     @Binding var flag: Bool
     @Environment(\.dismiss) private var dismiss
-
     var body: some View {
         NavigationStack {
             VStack {
@@ -13,58 +11,54 @@ struct SettingsView: View {
                     .frame(width: 169, height: 169)
                     .clipShape(Circle())
                     .padding(27)
-
                 NavigationLink {
                     MorningGridView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 64)
-                            .background()
-                            .cornerRadius(12)
                         Text("Editar Atividades")
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
                             .bold()
-                            .frame(width: 613, height: 64)
                             .contentShape(Rectangle())
-                    }
-                }
-                .padding(10)
-
-                NavigationLink {
-                    NewActivityView(flag: $flag)
-                } label: {
-                    ZStack {
-                        Rectangle()
                             .frame(width: 613, height: 64)
-                            .background()
+                            .background(Theme.action)
                             .cornerRadius(12)
-                        Text("Cadastrar Nova Atividade")
-                            .foregroundColor(.white)
-                            .bold()
-                            .frame(width: 613, height: 64)
-                            .contentShape(Rectangle())
                     }
                 }
-                .padding(10)
-
+                .padding(20)
+                .accentColor(Theme.action)
+//                NavigationLink {
+//                    NewActivityView(flag: $flag)
+//                } label: {
+//                    ZStack {
+//                        Text("Cadastrar Nova Atividade")
+//                            .font(.system(size: 28))
+//                            .foregroundColor(.white)
+//                            .bold()
+//                            .contentShape(Rectangle())
+//                            .frame(width: 613, height: 64)
+//                            .background(Theme.action)
+//                            .cornerRadius(12)
+//                    }
+//                }
+//                .padding(20)
+//                .accentColor(Theme.action)
                 NavigationLink {
                     PerfilEditView(flag: $flag)
                 } label: {
                     ZStack {
-                        Rectangle()
-                            .frame(width: 613, height: 64)
-                            .background()
-                            .cornerRadius(12)
                         Text("Editar Perfil")
+                            .font(.system(size: 28))
                             .foregroundColor(.white)
                             .bold()
-                            .frame(width: 613, height: 64)
                             .contentShape(Rectangle())
+                            .frame(width: 613, height: 64)
+                            .background(Theme.action)
+                            .cornerRadius(12)
                     }
                 }
-                .padding(10)
-
+                .padding(20)
+                .accentColor(Theme.action)
                 Spacer()
             }
         }

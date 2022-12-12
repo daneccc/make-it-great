@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "245163028_900660990851838_3169933356773939949_n.jpg",
+      "filename" : "- HiFi.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "- HiFi 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "- HiFi 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43918FB294214A9006FC895 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43918F8294214A9006FC895 /* CoreDataHelper.swift */; };
+		D43918FC294214A9006FC895 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43918F9294214A9006FC895 /* Theme.swift */; };
+		D43918FD294214A9006FC895 /* DataHelper.json in Resources */ = {isa = PBXBuildFile; fileRef = D43918FA294214A9006FC895 /* DataHelper.json */; };
+		D439190129424527006FC895 /* Activities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D43918FF29424527006FC895 /* Activities.xcdatamodeld */; };
+		D4391903294247E7006FC895 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4391902294247E7006FC895 /* HomeScreenView.swift */; };
+		D43919052944079B006FC895 /* ActivityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43919042944079B006FC895 /* ActivityListViewModel.swift */; };
+		D4DEF99A294503E6003EDD71 /* RegisterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF999294503E6003EDD71 /* RegisterNameView.swift */; };
+		D4DEF99C294503F4003EDD71 /* RegisterAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF99B294503F4003EDD71 /* RegisterAgeView.swift */; };
+		D4DEF99E29450407003EDD71 /* RegisterActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF99D29450407003EDD71 /* RegisterActivityView.swift */; };
+		D4DEF9A029460C60003EDD71 /* RegisterMorningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF99F29460C60003EDD71 /* RegisterMorningView.swift */; };
+		D4DEF9A229460CAD003EDD71 /* RegisterNightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9A129460CAD003EDD71 /* RegisterNightView.swift */; };
+		D4DEF9A629460CC8003EDD71 /* RegisterAfternoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9A529460CC8003EDD71 /* RegisterAfternoonView.swift */; };
+		D4DEF9A829464A1C003EDD71 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9A729464A1C003EDD71 /* UserDefaultsController.swift */; };
+		D4DEF9AA29464BF0003EDD71 /* ViewRouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9A929464BF0003EDD71 /* ViewRouterController.swift */; };
+		D4DEF9AC29464E12003EDD71 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9AB29464E12003EDD71 /* MotherView.swift */; };
+		D4DEF9AE2946890F003EDD71 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9AD2946890F003EDD71 /* CalendarView.swift */; };
+		D4DEF9B029468944003EDD71 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9AF29468944003EDD71 /* CalendarModel.swift */; };
+		D4DEF9B42946898B003EDD71 /* PlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9B32946898B003EDD71 /* PlannerViewModel.swift */; };
+		D4DEF9B6294689CE003EDD71 /* PlannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */; };
 		EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */; };
-		EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767F96292FAA9D00AFE6C0 /* ContentView.swift */; };
 		EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */; };
 		EE767F9C292FAA9F00AFE6C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE767F9B292FAA9F00AFE6C0 /* Preview Assets.xcassets */; };
 		EE767FA6292FAA9F00AFE6C0 /* MakeItGreatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE767FA5292FAA9F00AFE6C0 /* MakeItGreatTests.swift */; };
@@ -19,7 +37,6 @@
 		EECE02382938E63400F41460 /* OptionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02372938E63400F41460 /* OptionsModel.swift */; };
 		EECE023A2938E6DE00F41460 /* OptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02392938E6DE00F41460 /* OptionsViewModel.swift */; };
 		EECE023C29405EFA00F41460 /* PerfilEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE023B29405EFA00F41460 /* PerfilEditView.swift */; };
-		EECE023E29406B7600F41460 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE023D29406B7600F41460 /* StatisticView.swift */; };
 		EECE024029406E1200F41460 /* NewActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE023F29406E1200F41460 /* NewActivityView.swift */; };
 		EECE02422940730D00F41460 /* MorningGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02412940730D00F41460 /* MorningGridView.swift */; };
 		EECE02442940761900F41460 /* ActivityGridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE02432940761900F41460 /* ActivityGridModel.swift */; };
@@ -46,9 +63,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D43918F8294214A9006FC895 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		D43918F9294214A9006FC895 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D43918FA294214A9006FC895 /* DataHelper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataHelper.json; sourceTree = "<group>"; };
+		D439190029424527006FC895 /* Activities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Activities.xcdatamodel; sourceTree = "<group>"; };
+		D4391902294247E7006FC895 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		D43919042944079B006FC895 /* ActivityListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityListViewModel.swift; sourceTree = "<group>"; };
+		D4DEF999294503E6003EDD71 /* RegisterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNameView.swift; sourceTree = "<group>"; };
+		D4DEF99B294503F4003EDD71 /* RegisterAgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAgeView.swift; sourceTree = "<group>"; };
+		D4DEF99D29450407003EDD71 /* RegisterActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterActivityView.swift; sourceTree = "<group>"; };
+		D4DEF99F29460C60003EDD71 /* RegisterMorningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMorningView.swift; sourceTree = "<group>"; };
+		D4DEF9A129460CAD003EDD71 /* RegisterNightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNightView.swift; sourceTree = "<group>"; };
+		D4DEF9A529460CC8003EDD71 /* RegisterAfternoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAfternoonView.swift; sourceTree = "<group>"; };
+		D4DEF9A729464A1C003EDD71 /* UserDefaultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
+		D4DEF9A929464BF0003EDD71 /* ViewRouterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouterController.swift; sourceTree = "<group>"; };
+		D4DEF9AB29464E12003EDD71 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		D4DEF9AD2946890F003EDD71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		D4DEF9AF29468944003EDD71 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarModel.swift; path = MakeItGreat/View/CalendarModel.swift; sourceTree = SOURCE_ROOT; };
+		D4DEF9B32946898B003EDD71 /* PlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerViewModel.swift; sourceTree = "<group>"; };
+		D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlannerModel.swift; path = MakeItGreat/ViewModel/PlannerModel.swift; sourceTree = SOURCE_ROOT; };
 		EE767F91292FAA9D00AFE6C0 /* MakeItGreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItGreat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItGreatApp.swift; sourceTree = "<group>"; };
-		EE767F96292FAA9D00AFE6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE767F98292FAA9F00AFE6C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE767F9B292FAA9F00AFE6C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE767FA1292FAA9F00AFE6C0 /* MakeItGreatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeItGreatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +96,6 @@
 		EECE02372938E63400F41460 /* OptionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OptionsModel.swift; path = MakeItGreat/View/OptionsModel.swift; sourceTree = SOURCE_ROOT; };
 		EECE02392938E6DE00F41460 /* OptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OptionsViewModel.swift; path = MakeItGreat/View/OptionsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EECE023B29405EFA00F41460 /* PerfilEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilEditView.swift; sourceTree = "<group>"; };
-		EECE023D29406B7600F41460 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		EECE023F29406E1200F41460 /* NewActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityView.swift; sourceTree = "<group>"; };
 		EECE02412940730D00F41460 /* MorningGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningGridView.swift; sourceTree = "<group>"; };
 		EECE02432940761900F41460 /* ActivityGridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityGridModel.swift; path = MakeItGreat/View/ActivityGridModel.swift; sourceTree = SOURCE_ROOT; };
@@ -95,6 +129,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D43918F7294214A9006FC895 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D43918F8294214A9006FC895 /* CoreDataHelper.swift */,
+				D43918F9294214A9006FC895 /* Theme.swift */,
+				D43918FA294214A9006FC895 /* DataHelper.json */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D43918FE29424527006FC895 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D43918FF29424527006FC895 /* Activities.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		EE767F88292FAA9D00AFE6C0 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +170,8 @@
 		EE767F93292FAA9D00AFE6C0 /* MakeItGreat */ = {
 			isa = PBXGroup;
 			children = (
+				D43918FE29424527006FC895 /* CoreData */,
+				D43918F7294214A9006FC895 /* Helpers */,
 				EE767F94292FAA9D00AFE6C0 /* MakeItGreatApp.swift */,
 				EE767FC2292FAB2500AFE6C0 /* Controller */,
 				EE767FC1292FAB1700AFE6C0 /* View */,
@@ -157,8 +211,10 @@
 		EE767FBF292FAAFE00AFE6C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D43919042944079B006FC895 /* ActivityListViewModel.swift */,
 				EECE02392938E6DE00F41460 /* OptionsViewModel.swift */,
 				EECE02452940767100F41460 /* ActivityGridViewModel.swift */,
+				D4DEF9B32946898B003EDD71 /* PlannerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -168,6 +224,8 @@
 			children = (
 				EECE02372938E63400F41460 /* OptionsModel.swift */,
 				EECE02432940761900F41460 /* ActivityGridModel.swift */,
+				D4DEF9AF29468944003EDD71 /* CalendarModel.swift */,
+				D4DEF9B5294689CE003EDD71 /* PlannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,14 +234,21 @@
 			isa = PBXGroup;
 			children = (
 				EECE02352938E61400F41460 /* MainSplitView.swift */,
-				EE767F96292FAA9D00AFE6C0 /* ContentView.swift */,
 				EECE02332938D0EF00F41460 /* SettingsView.swift */,
 				EECE023B29405EFA00F41460 /* PerfilEditView.swift */,
-				EECE023D29406B7600F41460 /* StatisticView.swift */,
 				EECE023F29406E1200F41460 /* NewActivityView.swift */,
 				EECE02412940730D00F41460 /* MorningGridView.swift */,
 				EECE024729407DD700F41460 /* AfternoonGridView.swift */,
 				EECE024929407EA600F41460 /* NightGridView.swift */,
+				D4391902294247E7006FC895 /* HomeScreenView.swift */,
+				D4DEF999294503E6003EDD71 /* RegisterNameView.swift */,
+				D4DEF99B294503F4003EDD71 /* RegisterAgeView.swift */,
+				D4DEF99D29450407003EDD71 /* RegisterActivityView.swift */,
+				D4DEF99F29460C60003EDD71 /* RegisterMorningView.swift */,
+				D4DEF9A129460CAD003EDD71 /* RegisterNightView.swift */,
+				D4DEF9A529460CC8003EDD71 /* RegisterAfternoonView.swift */,
+				D4DEF9AB29464E12003EDD71 /* MotherView.swift */,
+				D4DEF9AD2946890F003EDD71 /* CalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +256,8 @@
 		EE767FC2292FAB2500AFE6C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D4DEF9A729464A1C003EDD71 /* UserDefaultsController.swift */,
+				D4DEF9A929464BF0003EDD71 /* ViewRouterController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE767F9C292FAA9F00AFE6C0 /* Preview Assets.xcassets in Resources */,
+				D43918FD294214A9006FC895 /* DataHelper.json in Resources */,
 				EE767F99292FAA9F00AFE6C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,17 +415,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DEF9B42946898B003EDD71 /* PlannerViewModel.swift in Sources */,
+				D43918FB294214A9006FC895 /* CoreDataHelper.swift in Sources */,
+				D4DEF9B029468944003EDD71 /* CalendarModel.swift in Sources */,
+				D4DEF9AC29464E12003EDD71 /* MotherView.swift in Sources */,
+				D4DEF9A629460CC8003EDD71 /* RegisterAfternoonView.swift in Sources */,
+				D439190129424527006FC895 /* Activities.xcdatamodeld in Sources */,
 				EECE02382938E63400F41460 /* OptionsModel.swift in Sources */,
 				EECE02462940767100F41460 /* ActivityGridViewModel.swift in Sources */,
-				EECE023E29406B7600F41460 /* StatisticView.swift in Sources */,
+				D4DEF9A229460CAD003EDD71 /* RegisterNightView.swift in Sources */,
+				D4DEF9AE2946890F003EDD71 /* CalendarView.swift in Sources */,
+				D43919052944079B006FC895 /* ActivityListViewModel.swift in Sources */,
 				EECE023A2938E6DE00F41460 /* OptionsViewModel.swift in Sources */,
 				EECE02342938D0EF00F41460 /* SettingsView.swift in Sources */,
+				D4DEF9B6294689CE003EDD71 /* PlannerModel.swift in Sources */,
 				EECE024A29407EA600F41460 /* NightGridView.swift in Sources */,
 				EECE024029406E1200F41460 /* NewActivityView.swift in Sources */,
+				D4DEF99E29450407003EDD71 /* RegisterActivityView.swift in Sources */,
+				D4DEF99A294503E6003EDD71 /* RegisterNameView.swift in Sources */,
+				D4DEF9A829464A1C003EDD71 /* UserDefaultsController.swift in Sources */,
+				D4DEF9A029460C60003EDD71 /* RegisterMorningView.swift in Sources */,
+				D4DEF99C294503F4003EDD71 /* RegisterAgeView.swift in Sources */,
 				EECE023C29405EFA00F41460 /* PerfilEditView.swift in Sources */,
+				D43918FC294214A9006FC895 /* Theme.swift in Sources */,
 				EECE02442940761900F41460 /* ActivityGridModel.swift in Sources */,
-				EE767F97292FAA9D00AFE6C0 /* ContentView.swift in Sources */,
 				EECE024829407DD700F41460 /* AfternoonGridView.swift in Sources */,
+				D4DEF9AA29464BF0003EDD71 /* ViewRouterController.swift in Sources */,
+				D4391903294247E7006FC895 /* HomeScreenView.swift in Sources */,
 				EECE02362938E61400F41460 /* MainSplitView.swift in Sources */,
 				EE767F95292FAA9D00AFE6C0 /* MakeItGreatApp.swift in Sources */,
 				EECE02422940730D00F41460 /* MorningGridView.swift in Sources */,
@@ -516,10 +600,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MakeItGreat/Preview Content\"";
-				DEVELOPMENT_TEAM = MXSWN6Q9F5;
+				DEVELOPMENT_TEAM = 37U5X9NN8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -534,6 +619,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = team01.MakeItGreat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,10 +631,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MakeItGreat/Preview Content\"";
-				DEVELOPMENT_TEAM = MXSWN6Q9F5;
+				DEVELOPMENT_TEAM = 37U5X9NN8C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -563,6 +650,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = team01.MakeItGreat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -685,6 +773,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D43918FF29424527006FC895 /* Activities.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D439190029424527006FC895 /* Activities.xcdatamodel */,
+			);
+			currentVersion = D439190029424527006FC895 /* Activities.xcdatamodel */;
+			path = Activities.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EE767F89292FAA9D00AFE6C0 /* Project object */;
 }
